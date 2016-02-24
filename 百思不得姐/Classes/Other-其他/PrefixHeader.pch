@@ -17,6 +17,11 @@
 
 #define SHNLogFunc SHNLog(@"%s",__func__)
 
+#define SHNRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define SHNGlobalBg SHNRGBColor(223, 223, 223)
+
+
 #import "UIView+SHNExtension.h"
 #import "UIBarButtonItem+SHNExtension.h"
 

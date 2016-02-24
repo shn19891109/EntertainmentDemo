@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1ED4C6741C7DDD33009417C9 /* SHNEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6731C7DDD33009417C9 /* SHNEssenceViewController.m */; };
-		1ED4C6771C7DDD56009417C9 /* SHNNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6761C7DDD56009417C9 /* SHNNewViewController.m */; };
-		1ED4C67A1C7DDD76009417C9 /* SHNFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6791C7DDD76009417C9 /* SHNFriendTrendsViewController.m */; };
-		1ED4C67D1C7DDD9E009417C9 /* SHNMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C67C1C7DDD9E009417C9 /* SHNMeViewController.m */; };
-		1ED4C6801C7DDDCB009417C9 /* SHNTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C67F1C7DDDCB009417C9 /* SHNTabBar.m */; };
-		1ED4C6831C7DDFE5009417C9 /* UIView+SHNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6821C7DDFE5009417C9 /* UIView+SHNExtension.m */; };
-		1ED4C6871C7DECE6009417C9 /* UIBarButtonItem+SHNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6861C7DECE6009417C9 /* UIBarButtonItem+SHNExtension.m */; };
-		1EEB51FE1C7C8B2800953ECC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB51FD1C7C8B2800953ECC /* main.m */; };
-		1EEB52011C7C8B2800953ECC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB52001C7C8B2800953ECC /* AppDelegate.m */; };
+		1ED4C6AF1C7DFBCB009417C9 /* SHNEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C68C1C7DFBCB009417C9 /* SHNEssenceViewController.m */; };
+		1ED4C6B01C7DFBCB009417C9 /* SHNFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6901C7DFBCB009417C9 /* SHNFriendTrendsViewController.m */; };
+		1ED4C6B11C7DFBCB009417C9 /* SHNMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6961C7DFBCB009417C9 /* SHNMeViewController.m */; };
+		1ED4C6B21C7DFBCB009417C9 /* SHNNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C69C1C7DFBCB009417C9 /* SHNNewViewController.m */; };
+		1ED4C6B31C7DFBCB009417C9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6A11C7DFBCB009417C9 /* AppDelegate.m */; };
+		1ED4C6B41C7DFBCB009417C9 /* UIBarButtonItem+SHNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6A41C7DFBCB009417C9 /* UIBarButtonItem+SHNExtension.m */; };
+		1ED4C6B51C7DFBCB009417C9 /* UIView+SHNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6A61C7DFBCB009417C9 /* UIView+SHNExtension.m */; };
+		1ED4C6B61C7DFBCB009417C9 /* SHNTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6A91C7DFBCB009417C9 /* SHNTabViewController.m */; };
+		1ED4C6B71C7DFBCB009417C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6AA1C7DFBCB009417C9 /* main.m */; };
+		1ED4C6B81C7DFBCB009417C9 /* SHNTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6AE1C7DFBCB009417C9 /* SHNTabBar.m */; };
 		1EEB52091C7C8B2800953ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEB52081C7C8B2800953ECC /* Assets.xcassets */; };
 		1EEB52171C7C8B2800953ECC /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB52161C7C8B2800953ECC /* _____Tests.m */; };
-		1EEB52231C7C8DDE00953ECC /* SHNTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB52221C7C8DDE00953ECC /* SHNTabViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,32 +32,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1ED4C6721C7DDD33009417C9 /* SHNEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNEssenceViewController.h; sourceTree = "<group>"; };
-		1ED4C6731C7DDD33009417C9 /* SHNEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNEssenceViewController.m; sourceTree = "<group>"; };
-		1ED4C6751C7DDD56009417C9 /* SHNNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNNewViewController.h; sourceTree = "<group>"; };
-		1ED4C6761C7DDD56009417C9 /* SHNNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNNewViewController.m; sourceTree = "<group>"; };
-		1ED4C6781C7DDD76009417C9 /* SHNFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNFriendTrendsViewController.h; sourceTree = "<group>"; };
-		1ED4C6791C7DDD76009417C9 /* SHNFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNFriendTrendsViewController.m; sourceTree = "<group>"; };
-		1ED4C67B1C7DDD9E009417C9 /* SHNMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNMeViewController.h; sourceTree = "<group>"; };
-		1ED4C67C1C7DDD9E009417C9 /* SHNMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNMeViewController.m; sourceTree = "<group>"; };
-		1ED4C67E1C7DDDCB009417C9 /* SHNTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNTabBar.h; sourceTree = "<group>"; };
-		1ED4C67F1C7DDDCB009417C9 /* SHNTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNTabBar.m; sourceTree = "<group>"; };
-		1ED4C6811C7DDFE5009417C9 /* UIView+SHNExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SHNExtension.h"; sourceTree = "<group>"; };
-		1ED4C6821C7DDFE5009417C9 /* UIView+SHNExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SHNExtension.m"; sourceTree = "<group>"; };
-		1ED4C6841C7DE013009417C9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		1ED4C6851C7DECE6009417C9 /* UIBarButtonItem+SHNExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SHNExtension.h"; sourceTree = "<group>"; };
-		1ED4C6861C7DECE6009417C9 /* UIBarButtonItem+SHNExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SHNExtension.m"; sourceTree = "<group>"; };
+		1ED4C68B1C7DFBCB009417C9 /* SHNEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNEssenceViewController.h; sourceTree = "<group>"; };
+		1ED4C68C1C7DFBCB009417C9 /* SHNEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNEssenceViewController.m; sourceTree = "<group>"; };
+		1ED4C68F1C7DFBCB009417C9 /* SHNFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNFriendTrendsViewController.h; sourceTree = "<group>"; };
+		1ED4C6901C7DFBCB009417C9 /* SHNFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNFriendTrendsViewController.m; sourceTree = "<group>"; };
+		1ED4C6951C7DFBCB009417C9 /* SHNMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNMeViewController.h; sourceTree = "<group>"; };
+		1ED4C6961C7DFBCB009417C9 /* SHNMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNMeViewController.m; sourceTree = "<group>"; };
+		1ED4C69B1C7DFBCB009417C9 /* SHNNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNNewViewController.h; sourceTree = "<group>"; };
+		1ED4C69C1C7DFBCB009417C9 /* SHNNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNNewViewController.m; sourceTree = "<group>"; };
+		1ED4C6A01C7DFBCB009417C9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1ED4C6A11C7DFBCB009417C9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1ED4C6A31C7DFBCB009417C9 /* UIBarButtonItem+SHNExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SHNExtension.h"; sourceTree = "<group>"; };
+		1ED4C6A41C7DFBCB009417C9 /* UIBarButtonItem+SHNExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SHNExtension.m"; sourceTree = "<group>"; };
+		1ED4C6A51C7DFBCB009417C9 /* UIView+SHNExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SHNExtension.h"; sourceTree = "<group>"; };
+		1ED4C6A61C7DFBCB009417C9 /* UIView+SHNExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SHNExtension.m"; sourceTree = "<group>"; };
+		1ED4C6A81C7DFBCB009417C9 /* SHNTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNTabViewController.h; sourceTree = "<group>"; };
+		1ED4C6A91C7DFBCB009417C9 /* SHNTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNTabViewController.m; sourceTree = "<group>"; };
+		1ED4C6AA1C7DFBCB009417C9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1ED4C6AB1C7DFBCB009417C9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1ED4C6AD1C7DFBCB009417C9 /* SHNTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNTabBar.h; sourceTree = "<group>"; };
+		1ED4C6AE1C7DFBCB009417C9 /* SHNTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNTabBar.m; sourceTree = "<group>"; };
 		1EEB51F91C7C8B2800953ECC /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1EEB51FD1C7C8B2800953ECC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1EEB51FF1C7C8B2800953ECC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1EEB52001C7C8B2800953ECC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1EEB52081C7C8B2800953ECC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EEB520D1C7C8B2800953ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EEB52121C7C8B2800953ECC /* 百思不得姐Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "百思不得姐Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EEB52161C7C8B2800953ECC /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
 		1EEB52181C7C8B2800953ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EEB52211C7C8DDE00953ECC /* SHNTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNTabViewController.h; sourceTree = "<group>"; };
-		1EEB52221C7C8DDE00953ECC /* SHNTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNTabViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +78,177 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ED4C6881C7DFBCB009417C9 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4C6891C7DFBCB009417C9 /* Essence-精华 */,
+				1ED4C68D1C7DFBCB009417C9 /* FriendTrends-关注 */,
+				1ED4C6931C7DFBCB009417C9 /* Me-我 */,
+				1ED4C6991C7DFBCB009417C9 /* New-新帖 */,
+				1ED4C69F1C7DFBCB009417C9 /* Other-其他 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1ED4C6891C7DFBCB009417C9 /* Essence-精华 */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4C68A1C7DFBCB009417C9 /* Controller */,
+			);
+			path = "Essence-精华";
+			sourceTree = "<group>";
+		};
+		1ED4C68A1C7DFBCB009417C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4C68B1C7DFBCB009417C9 /* SHNEssenceViewController.h */,
+				1ED4C68C1C7DFBCB009417C9 /* SHNEssenceViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1ED4C68D1C7DFBCB009417C9 /* FriendTrends-关注 */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4C68E1C7DFBCB009417C9 /* Controller */,
+				1ED4C6911C7DFBCB009417C9 /* Model */,
+				1ED4C6921C7DFBCB009417C9 /* View */,
+			);
+			path = "FriendTrends-关注";
+			sourceTree = "<group>";
+		};
+		1ED4C68E1C7DFBCB009417C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4C68F1C7DFBCB009417C9 /* SHNFriendTrendsViewController.h */,
+				1ED4C6901C7DFBCB009417C9 /* SHNFriendTrendsViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1ED4C6911C7DFBCB009417C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1ED4C6921C7DFBCB009417C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1ED4C6931C7DFBCB009417C9 /* Me-我 */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4C6941C7DFBCB009417C9 /* Controller */,
+				1ED4C6971C7DFBCB009417C9 /* Model */,
+				1ED4C6981C7DFBCB009417C9 /* View */,
+			);
+			path = "Me-我";
+			sourceTree = "<group>";
+		};
+		1ED4C6941C7DFBCB009417C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4C6951C7DFBCB009417C9 /* SHNMeViewController.h */,
+				1ED4C6961C7DFBCB009417C9 /* SHNMeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1ED4C6971C7DFBCB009417C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1ED4C6981C7DFBCB009417C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1ED4C6991C7DFBCB009417C9 /* New-新帖 */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4C69A1C7DFBCB009417C9 /* Controller */,
+				1ED4C69D1C7DFBCB009417C9 /* Model */,
+				1ED4C69E1C7DFBCB009417C9 /* View */,
+			);
+			path = "New-新帖";
+			sourceTree = "<group>";
+		};
+		1ED4C69A1C7DFBCB009417C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4C69B1C7DFBCB009417C9 /* SHNNewViewController.h */,
+				1ED4C69C1C7DFBCB009417C9 /* SHNNewViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1ED4C69D1C7DFBCB009417C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1ED4C69E1C7DFBCB009417C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1ED4C69F1C7DFBCB009417C9 /* Other-其他 */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4C6A21C7DFBCB009417C9 /* Category */,
+				1ED4C6A71C7DFBCB009417C9 /* Controller */,
+				1ED4C6AC1C7DFBCB009417C9 /* View */,
+				1ED4C6A01C7DFBCB009417C9 /* AppDelegate.h */,
+				1ED4C6A11C7DFBCB009417C9 /* AppDelegate.m */,
+				1ED4C6AA1C7DFBCB009417C9 /* main.m */,
+				1ED4C6AB1C7DFBCB009417C9 /* PrefixHeader.pch */,
+			);
+			path = "Other-其他";
+			sourceTree = "<group>";
+		};
+		1ED4C6A21C7DFBCB009417C9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4C6A31C7DFBCB009417C9 /* UIBarButtonItem+SHNExtension.h */,
+				1ED4C6A41C7DFBCB009417C9 /* UIBarButtonItem+SHNExtension.m */,
+				1ED4C6A51C7DFBCB009417C9 /* UIView+SHNExtension.h */,
+				1ED4C6A61C7DFBCB009417C9 /* UIView+SHNExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		1ED4C6A71C7DFBCB009417C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4C6A81C7DFBCB009417C9 /* SHNTabViewController.h */,
+				1ED4C6A91C7DFBCB009417C9 /* SHNTabViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1ED4C6AC1C7DFBCB009417C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1ED4C6AD1C7DFBCB009417C9 /* SHNTabBar.h */,
+				1ED4C6AE1C7DFBCB009417C9 /* SHNTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1EEB51F01C7C8B2800953ECC = {
 			isa = PBXGroup;
 			children = (
@@ -99,26 +270,8 @@
 		1EEB51FB1C7C8B2800953ECC /* 百思不得姐 */ = {
 			isa = PBXGroup;
 			children = (
-				1EEB51FF1C7C8B2800953ECC /* AppDelegate.h */,
-				1EEB52001C7C8B2800953ECC /* AppDelegate.m */,
-				1EEB52211C7C8DDE00953ECC /* SHNTabViewController.h */,
-				1EEB52221C7C8DDE00953ECC /* SHNTabViewController.m */,
-				1ED4C6721C7DDD33009417C9 /* SHNEssenceViewController.h */,
-				1ED4C6731C7DDD33009417C9 /* SHNEssenceViewController.m */,
-				1ED4C6751C7DDD56009417C9 /* SHNNewViewController.h */,
-				1ED4C6761C7DDD56009417C9 /* SHNNewViewController.m */,
-				1ED4C6781C7DDD76009417C9 /* SHNFriendTrendsViewController.h */,
-				1ED4C6791C7DDD76009417C9 /* SHNFriendTrendsViewController.m */,
-				1ED4C67B1C7DDD9E009417C9 /* SHNMeViewController.h */,
-				1ED4C67C1C7DDD9E009417C9 /* SHNMeViewController.m */,
-				1ED4C67E1C7DDDCB009417C9 /* SHNTabBar.h */,
-				1ED4C67F1C7DDDCB009417C9 /* SHNTabBar.m */,
-				1ED4C6811C7DDFE5009417C9 /* UIView+SHNExtension.h */,
-				1ED4C6821C7DDFE5009417C9 /* UIView+SHNExtension.m */,
-				1ED4C6851C7DECE6009417C9 /* UIBarButtonItem+SHNExtension.h */,
-				1ED4C6861C7DECE6009417C9 /* UIBarButtonItem+SHNExtension.m */,
+				1ED4C6881C7DFBCB009417C9 /* Classes */,
 				1EEB51FC1C7C8B2800953ECC /* Supporting Files */,
-				1ED4C6841C7DE013009417C9 /* PrefixHeader.pch */,
 			);
 			path = "百思不得姐";
 			sourceTree = "<group>";
@@ -128,7 +281,6 @@
 			children = (
 				1EEB52081C7C8B2800953ECC /* Assets.xcassets */,
 				1EEB520D1C7C8B2800953ECC /* Info.plist */,
-				1EEB51FD1C7C8B2800953ECC /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -241,16 +393,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ED4C67A1C7DDD76009417C9 /* SHNFriendTrendsViewController.m in Sources */,
-				1EEB52011C7C8B2800953ECC /* AppDelegate.m in Sources */,
-				1EEB52231C7C8DDE00953ECC /* SHNTabViewController.m in Sources */,
-				1ED4C6831C7DDFE5009417C9 /* UIView+SHNExtension.m in Sources */,
-				1ED4C6871C7DECE6009417C9 /* UIBarButtonItem+SHNExtension.m in Sources */,
-				1ED4C6801C7DDDCB009417C9 /* SHNTabBar.m in Sources */,
-				1EEB51FE1C7C8B2800953ECC /* main.m in Sources */,
-				1ED4C6741C7DDD33009417C9 /* SHNEssenceViewController.m in Sources */,
-				1ED4C67D1C7DDD9E009417C9 /* SHNMeViewController.m in Sources */,
-				1ED4C6771C7DDD56009417C9 /* SHNNewViewController.m in Sources */,
+				1ED4C6B71C7DFBCB009417C9 /* main.m in Sources */,
+				1ED4C6B81C7DFBCB009417C9 /* SHNTabBar.m in Sources */,
+				1ED4C6B41C7DFBCB009417C9 /* UIBarButtonItem+SHNExtension.m in Sources */,
+				1ED4C6B01C7DFBCB009417C9 /* SHNFriendTrendsViewController.m in Sources */,
+				1ED4C6B51C7DFBCB009417C9 /* UIView+SHNExtension.m in Sources */,
+				1ED4C6B31C7DFBCB009417C9 /* AppDelegate.m in Sources */,
+				1ED4C6B11C7DFBCB009417C9 /* SHNMeViewController.m in Sources */,
+				1ED4C6AF1C7DFBCB009417C9 /* SHNEssenceViewController.m in Sources */,
+				1ED4C6B61C7DFBCB009417C9 /* SHNTabViewController.m in Sources */,
+				1ED4C6B21C7DFBCB009417C9 /* SHNNewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +451,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "百思不得姐/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -341,6 +494,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "百思不得姐/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -360,6 +514,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "百思不得姐/Classes/Other-其他/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "suhaonan.-----";
@@ -373,6 +529,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "百思不得姐/Classes/Other-其他/PrefixHeader.pch";
 				INFOPLIST_FILE = "百思不得姐/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "suhaonan.-----";

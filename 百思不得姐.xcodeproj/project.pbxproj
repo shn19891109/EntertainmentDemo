@@ -13,6 +13,7 @@
 		1ED4C67D1C7DDD9E009417C9 /* SHNMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C67C1C7DDD9E009417C9 /* SHNMeViewController.m */; };
 		1ED4C6801C7DDDCB009417C9 /* SHNTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C67F1C7DDDCB009417C9 /* SHNTabBar.m */; };
 		1ED4C6831C7DDFE5009417C9 /* UIView+SHNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6821C7DDFE5009417C9 /* UIView+SHNExtension.m */; };
+		1ED4C6871C7DECE6009417C9 /* UIBarButtonItem+SHNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6861C7DECE6009417C9 /* UIBarButtonItem+SHNExtension.m */; };
 		1EEB51FE1C7C8B2800953ECC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB51FD1C7C8B2800953ECC /* main.m */; };
 		1EEB52011C7C8B2800953ECC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB52001C7C8B2800953ECC /* AppDelegate.m */; };
 		1EEB52091C7C8B2800953ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEB52081C7C8B2800953ECC /* Assets.xcassets */; };
@@ -44,6 +45,8 @@
 		1ED4C6811C7DDFE5009417C9 /* UIView+SHNExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SHNExtension.h"; sourceTree = "<group>"; };
 		1ED4C6821C7DDFE5009417C9 /* UIView+SHNExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SHNExtension.m"; sourceTree = "<group>"; };
 		1ED4C6841C7DE013009417C9 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1ED4C6851C7DECE6009417C9 /* UIBarButtonItem+SHNExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SHNExtension.h"; sourceTree = "<group>"; };
+		1ED4C6861C7DECE6009417C9 /* UIBarButtonItem+SHNExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SHNExtension.m"; sourceTree = "<group>"; };
 		1EEB51F91C7C8B2800953ECC /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EEB51FD1C7C8B2800953ECC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1EEB51FF1C7C8B2800953ECC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 				1ED4C67F1C7DDDCB009417C9 /* SHNTabBar.m */,
 				1ED4C6811C7DDFE5009417C9 /* UIView+SHNExtension.h */,
 				1ED4C6821C7DDFE5009417C9 /* UIView+SHNExtension.m */,
+				1ED4C6851C7DECE6009417C9 /* UIBarButtonItem+SHNExtension.h */,
+				1ED4C6861C7DECE6009417C9 /* UIBarButtonItem+SHNExtension.m */,
 				1EEB51FC1C7C8B2800953ECC /* Supporting Files */,
 				1ED4C6841C7DE013009417C9 /* PrefixHeader.pch */,
 			);
@@ -240,6 +245,7 @@
 				1EEB52011C7C8B2800953ECC /* AppDelegate.m in Sources */,
 				1EEB52231C7C8DDE00953ECC /* SHNTabViewController.m in Sources */,
 				1ED4C6831C7DDFE5009417C9 /* UIView+SHNExtension.m in Sources */,
+				1ED4C6871C7DECE6009417C9 /* UIBarButtonItem+SHNExtension.m in Sources */,
 				1ED4C6801C7DDDCB009417C9 /* SHNTabBar.m in Sources */,
 				1EEB51FE1C7C8B2800953ECC /* main.m in Sources */,
 				1ED4C6741C7DDD33009417C9 /* SHNEssenceViewController.m in Sources */,

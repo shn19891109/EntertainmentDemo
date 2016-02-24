@@ -17,6 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // 设置导航栏标题
+    self.navigationItem.title = @"我的关注";
+    // 设置导航栏左边的按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(friendsClick)];
+    
+}
+- (void)friendsClick
+{
+    SHNLogFunc;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -16,7 +16,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    // 设置导航栏标题
+    self.navigationItem.title = @"我的";
+    
+    // self.title = @"" 这种设置标题等价于 self.navigationItem.title = @""和self.tabBarItem.title = @"";
+
+    
+    
+    // 设置导航栏右边的按钮
+    UIBarButtonItem *settingItem = [UIBarButtonItem itemWithImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(settingClick)];
+    UIBarButtonItem *moonItem = [UIBarButtonItem itemWithImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(moonClick)];
+    self.navigationItem.rightBarButtonItems = @[settingItem, moonItem];
+}
+- (void)settingClick
+{
+    SHNLogFunc;
+}
+
+- (void)moonClick
+{
+    SHNLogFunc;
 }
 
 - (void)didReceiveMemoryWarning {

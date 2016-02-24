@@ -9,9 +9,16 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+#ifdef DEBUG
+#define SHNLog(...)  NSLog(__VA_ARGS__)
+#else
+#define SHNLog(...)
+#endif
 
+#define SHNLogFunc SHNLog(@"%s",__func__)
 
 #import "UIView+SHNExtension.h"
+#import "UIBarButtonItem+SHNExtension.h"
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.

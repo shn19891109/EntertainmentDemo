@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1EBE6ABA1C7F2B2100E3FDB4 /* SHNNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBE6AB91C7F2B2100E3FDB4 /* SHNNavigationController.m */; };
 		1ED4C6AF1C7DFBCB009417C9 /* SHNEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C68C1C7DFBCB009417C9 /* SHNEssenceViewController.m */; };
 		1ED4C6B01C7DFBCB009417C9 /* SHNFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6901C7DFBCB009417C9 /* SHNFriendTrendsViewController.m */; };
 		1ED4C6B11C7DFBCB009417C9 /* SHNMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6961C7DFBCB009417C9 /* SHNMeViewController.m */; };
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1EBE6AB81C7F2B2100E3FDB4 /* SHNNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNNavigationController.h; sourceTree = "<group>"; };
+		1EBE6AB91C7F2B2100E3FDB4 /* SHNNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNNavigationController.m; sourceTree = "<group>"; };
 		1ED4C68B1C7DFBCB009417C9 /* SHNEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNEssenceViewController.h; sourceTree = "<group>"; };
 		1ED4C68C1C7DFBCB009417C9 /* SHNEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNEssenceViewController.m; sourceTree = "<group>"; };
 		1ED4C68F1C7DFBCB009417C9 /* SHNFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNFriendTrendsViewController.h; sourceTree = "<group>"; };
@@ -236,6 +239,8 @@
 			children = (
 				1ED4C6A81C7DFBCB009417C9 /* SHNTabViewController.h */,
 				1ED4C6A91C7DFBCB009417C9 /* SHNTabViewController.m */,
+				1EBE6AB81C7F2B2100E3FDB4 /* SHNNavigationController.h */,
+				1EBE6AB91C7F2B2100E3FDB4 /* SHNNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -395,6 +400,7 @@
 			files = (
 				1ED4C6B71C7DFBCB009417C9 /* main.m in Sources */,
 				1ED4C6B81C7DFBCB009417C9 /* SHNTabBar.m in Sources */,
+				1EBE6ABA1C7F2B2100E3FDB4 /* SHNNavigationController.m in Sources */,
 				1ED4C6B41C7DFBCB009417C9 /* UIBarButtonItem+SHNExtension.m in Sources */,
 				1ED4C6B01C7DFBCB009417C9 /* SHNFriendTrendsViewController.m in Sources */,
 				1ED4C6B51C7DFBCB009417C9 /* UIView+SHNExtension.m in Sources */,

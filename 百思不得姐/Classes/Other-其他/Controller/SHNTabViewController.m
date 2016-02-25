@@ -12,6 +12,7 @@
 #import "SHNFriendTrendsViewController.h"
 #import "SHNMeViewController.h"
 #import "SHNTabBar.h"
+#import "SHNNavigationController.h"
 @interface SHNTabViewController ()
 
 @end
@@ -37,7 +38,10 @@
     selectedAttrs[NSFontAttributeName] = attrs[NSFontAttributeName];
     selectedAttrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
 
- 
+    UITabBarItem *item = [UITabBarItem appearance];
+    [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
+    [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+
     
     // 添加子控制器
     [self setupChildVc:[[SHNEssenceViewController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
@@ -67,7 +71,7 @@
 //    vc.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(100)/100.0 green:arc4random_uniform(100)/100.0 blue:arc4random_uniform(100)/100.0 alpha:1.0];
     
     // 包装一个导航控制器，添加导航控制器为tabbarcontroller为子控制器
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+    SHNNavigationController *nav = [[SHNNavigationController alloc] initWithRootViewController:vc];
     [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
 
     [self addChildViewController:nav];

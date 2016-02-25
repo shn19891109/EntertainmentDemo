@@ -19,15 +19,7 @@
 
 @implementation SHNTabViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-
-    //防止图片被重新渲染的方法
-    //    UIImage *image = [UIImage imageNamed:@"tabBar_essence_click_icon"];
-    //    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    //    vc01.tabBarItem.selectedImage = image;
-
-    
++ (void)initialize {
     // 通过appearance统一设置所有UITabBarItem的文字属性
     // 后面带有UI_APPEARANCE_SELECTOR的方法, 都可以通过appearance对象来统一设置(例如 [UINavigationBar appearance])
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
@@ -37,11 +29,19 @@
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
     selectedAttrs[NSFontAttributeName] = attrs[NSFontAttributeName];
     selectedAttrs[NSForegroundColorAttributeName] = [UIColor darkGrayColor];
-
+    
     UITabBarItem *item = [UITabBarItem appearance];
     [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectedAttrs forState:UIControlStateSelected];
+}
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    //防止图片被重新渲染的方法
+    //    UIImage *image = [UIImage imageNamed:@"tabBar_essence_click_icon"];
+    //    image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    //    vc01.tabBarItem.selectedImage = image;
     
     // 添加子控制器
     [self setupChildVc:[[SHNEssenceViewController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
@@ -72,7 +72,6 @@
     
     // 包装一个导航控制器，添加导航控制器为tabbarcontroller为子控制器
     SHNNavigationController *nav = [[SHNNavigationController alloc] initWithRootViewController:vc];
-    [nav.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
 
     [self addChildViewController:nav];
 }

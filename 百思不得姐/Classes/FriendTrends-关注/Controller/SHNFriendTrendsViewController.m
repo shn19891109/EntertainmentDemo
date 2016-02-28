@@ -7,7 +7,7 @@
 //
 
 #import "SHNFriendTrendsViewController.h"
-
+#import "SHNRecomendViewController.h"
 @interface SHNFriendTrendsViewController ()
 
 @end
@@ -29,6 +29,8 @@
 - (void)friendsClick
 {
     SHNLogFunc;
+    SHNRecomendViewController *recomendVC = [[SHNRecomendViewController alloc] init];
+    [self.navigationController pushViewController:recomendVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

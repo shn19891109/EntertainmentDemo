@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		02176CC71A5871480CBF59B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90340C6F97E1864E32D7EDAF /* libPods.a */; };
+		1E4B724B1C82E1850009C81F /* SHNRecomendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4B72491C82E1850009C81F /* SHNRecomendViewController.m */; };
+		1E4B724C1C82E1850009C81F /* SHNRecomendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E4B724A1C82E1850009C81F /* SHNRecomendViewController.xib */; };
+		1E4B724F1C82F1C30009C81F /* SHNRecomendCatogory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4B724E1C82F1C30009C81F /* SHNRecomendCatogory.m */; };
+		1E4B72521C82F1F20009C81F /* SHNRecomendCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4B72511C82F1F20009C81F /* SHNRecomendCategoryCell.m */; };
+		1E4B72541C82F23D0009C81F /* SHNRecomendCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E4B72531C82F23D0009C81F /* SHNRecomendCategoryCell.xib */; };
 		1EBE6ABA1C7F2B2100E3FDB4 /* SHNNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBE6AB91C7F2B2100E3FDB4 /* SHNNavigationController.m */; };
 		1EBE6ABC1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EBE6ABB1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib */; };
 		1ED4C6AF1C7DFBCB009417C9 /* SHNEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C68C1C7DFBCB009417C9 /* SHNEssenceViewController.m */; };
@@ -35,6 +40,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E4B72481C82E1850009C81F /* SHNRecomendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNRecomendViewController.h; sourceTree = "<group>"; };
+		1E4B72491C82E1850009C81F /* SHNRecomendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNRecomendViewController.m; sourceTree = "<group>"; };
+		1E4B724A1C82E1850009C81F /* SHNRecomendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNRecomendViewController.xib; sourceTree = "<group>"; };
+		1E4B724D1C82F1C30009C81F /* SHNRecomendCatogory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNRecomendCatogory.h; sourceTree = "<group>"; };
+		1E4B724E1C82F1C30009C81F /* SHNRecomendCatogory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNRecomendCatogory.m; sourceTree = "<group>"; };
+		1E4B72501C82F1F20009C81F /* SHNRecomendCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNRecomendCategoryCell.h; sourceTree = "<group>"; };
+		1E4B72511C82F1F20009C81F /* SHNRecomendCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNRecomendCategoryCell.m; sourceTree = "<group>"; };
+		1E4B72531C82F23D0009C81F /* SHNRecomendCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNRecomendCategoryCell.xib; sourceTree = "<group>"; };
 		1EBE6AB81C7F2B2100E3FDB4 /* SHNNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNNavigationController.h; sourceTree = "<group>"; };
 		1EBE6AB91C7F2B2100E3FDB4 /* SHNNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNNavigationController.m; sourceTree = "<group>"; };
 		1EBE6ABB1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNFriendTrendsViewController.xib; sourceTree = "<group>"; };
@@ -133,6 +146,9 @@
 				1ED4C68F1C7DFBCB009417C9 /* SHNFriendTrendsViewController.h */,
 				1ED4C6901C7DFBCB009417C9 /* SHNFriendTrendsViewController.m */,
 				1EBE6ABB1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib */,
+				1E4B72481C82E1850009C81F /* SHNRecomendViewController.h */,
+				1E4B72491C82E1850009C81F /* SHNRecomendViewController.m */,
+				1E4B724A1C82E1850009C81F /* SHNRecomendViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -140,6 +156,8 @@
 		1ED4C6911C7DFBCB009417C9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1E4B724D1C82F1C30009C81F /* SHNRecomendCatogory.h */,
+				1E4B724E1C82F1C30009C81F /* SHNRecomendCatogory.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -147,6 +165,9 @@
 		1ED4C6921C7DFBCB009417C9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1E4B72501C82F1F20009C81F /* SHNRecomendCategoryCell.h */,
+				1E4B72511C82F1F20009C81F /* SHNRecomendCategoryCell.m */,
+				1E4B72531C82F23D0009C81F /* SHNRecomendCategoryCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -409,7 +430,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E4B72541C82F23D0009C81F /* SHNRecomendCategoryCell.xib in Resources */,
 				1EBE6ABC1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib in Resources */,
+				1E4B724C1C82E1850009C81F /* SHNRecomendViewController.xib in Resources */,
 				1EEB52091C7C8B2800953ECC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -464,13 +487,16 @@
 				1ED4C6B71C7DFBCB009417C9 /* main.m in Sources */,
 				1ED4C6B81C7DFBCB009417C9 /* SHNTabBar.m in Sources */,
 				1EBE6ABA1C7F2B2100E3FDB4 /* SHNNavigationController.m in Sources */,
+				1E4B724B1C82E1850009C81F /* SHNRecomendViewController.m in Sources */,
 				1ED4C6B41C7DFBCB009417C9 /* UIBarButtonItem+SHNExtension.m in Sources */,
+				1E4B724F1C82F1C30009C81F /* SHNRecomendCatogory.m in Sources */,
 				1ED4C6B01C7DFBCB009417C9 /* SHNFriendTrendsViewController.m in Sources */,
 				1ED4C6B51C7DFBCB009417C9 /* UIView+SHNExtension.m in Sources */,
 				1ED4C6B31C7DFBCB009417C9 /* AppDelegate.m in Sources */,
 				1ED4C6B11C7DFBCB009417C9 /* SHNMeViewController.m in Sources */,
 				1ED4C6AF1C7DFBCB009417C9 /* SHNEssenceViewController.m in Sources */,
 				1ED4C6B61C7DFBCB009417C9 /* SHNTabViewController.m in Sources */,
+				1E4B72521C82F1F20009C81F /* SHNRecomendCategoryCell.m in Sources */,
 				1ED4C6B21C7DFBCB009417C9 /* SHNNewViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

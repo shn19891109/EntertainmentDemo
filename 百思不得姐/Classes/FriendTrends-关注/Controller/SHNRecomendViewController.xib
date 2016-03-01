@@ -8,6 +8,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SHNRecomendViewController">
             <connections>
                 <outlet property="categoryTableView" destination="9sJ-C7-OrO" id="NUy-hF-hXY"/>
+                <outlet property="userTableView" destination="zrc-gR-FRU" id="8pP-j6-ioN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -27,12 +28,23 @@
                         <outlet property="delegate" destination="-1" id="KOt-75-qLV"/>
                     </connections>
                 </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zrc-gR-FRU" userLabel="右侧">
+                    <rect key="frame" x="100" y="0.0" width="500" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="n9Z-J3-luI"/>
+                    </connections>
+                </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="zrc-gR-FRU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="DRm-dr-faV"/>
                 <constraint firstItem="9sJ-C7-OrO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="EOm-T8-2E2"/>
+                <constraint firstAttribute="trailing" secondItem="zrc-gR-FRU" secondAttribute="trailing" id="Mtg-SZ-eFX"/>
                 <constraint firstItem="9sJ-C7-OrO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QB3-4x-M00"/>
                 <constraint firstAttribute="bottom" secondItem="9sJ-C7-OrO" secondAttribute="bottom" id="jRg-ew-tUV"/>
+                <constraint firstAttribute="bottom" secondItem="zrc-gR-FRU" secondAttribute="bottom" id="lPF-2q-G0x"/>
+                <constraint firstItem="zrc-gR-FRU" firstAttribute="leading" secondItem="9sJ-C7-OrO" secondAttribute="trailing" id="pNf-B7-Nnm"/>
             </constraints>
             <point key="canvasLocation" x="196" y="280"/>
         </view>

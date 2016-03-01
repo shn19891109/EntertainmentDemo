@@ -9,5 +9,12 @@
 #import "SHNRecomendCatogory.h"
 
 @implementation SHNRecomendCatogory
+- (NSMutableArray *)users
+{
+    if (!_users) {
+        _users = [NSMutableArray array];
+    }
+    return _users;
+}
 
 @end

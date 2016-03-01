@@ -13,6 +13,10 @@
 		1E4B724F1C82F1C30009C81F /* SHNRecomendCatogory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4B724E1C82F1C30009C81F /* SHNRecomendCatogory.m */; };
 		1E4B72521C82F1F20009C81F /* SHNRecomendCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4B72511C82F1F20009C81F /* SHNRecomendCategoryCell.m */; };
 		1E4B72541C82F23D0009C81F /* SHNRecomendCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E4B72531C82F23D0009C81F /* SHNRecomendCategoryCell.xib */; };
+		1E4B72561C82FD1E0009C81F /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4B72551C82FD1E0009C81F /* Foundation+Log.m */; };
+		1EAD82311C85C1D2008E5DCB /* SHNRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD82301C85C1D2008E5DCB /* SHNRecommendUser.m */; };
+		1EAD82351C85C204008E5DCB /* SHNRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD82331C85C204008E5DCB /* SHNRecommendUserCell.m */; };
+		1EAD82361C85C204008E5DCB /* SHNRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EAD82341C85C204008E5DCB /* SHNRecommendUserCell.xib */; };
 		1EBE6ABA1C7F2B2100E3FDB4 /* SHNNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBE6AB91C7F2B2100E3FDB4 /* SHNNavigationController.m */; };
 		1EBE6ABC1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EBE6ABB1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib */; };
 		1ED4C6AF1C7DFBCB009417C9 /* SHNEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C68C1C7DFBCB009417C9 /* SHNEssenceViewController.m */; };
@@ -48,6 +52,12 @@
 		1E4B72501C82F1F20009C81F /* SHNRecomendCategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNRecomendCategoryCell.h; sourceTree = "<group>"; };
 		1E4B72511C82F1F20009C81F /* SHNRecomendCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNRecomendCategoryCell.m; sourceTree = "<group>"; };
 		1E4B72531C82F23D0009C81F /* SHNRecomendCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNRecomendCategoryCell.xib; sourceTree = "<group>"; };
+		1E4B72551C82FD1E0009C81F /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		1EAD822F1C85C1D2008E5DCB /* SHNRecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNRecommendUser.h; sourceTree = "<group>"; };
+		1EAD82301C85C1D2008E5DCB /* SHNRecommendUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNRecommendUser.m; sourceTree = "<group>"; };
+		1EAD82321C85C204008E5DCB /* SHNRecommendUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNRecommendUserCell.h; sourceTree = "<group>"; };
+		1EAD82331C85C204008E5DCB /* SHNRecommendUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNRecommendUserCell.m; sourceTree = "<group>"; };
+		1EAD82341C85C204008E5DCB /* SHNRecommendUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNRecommendUserCell.xib; sourceTree = "<group>"; };
 		1EBE6AB81C7F2B2100E3FDB4 /* SHNNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNNavigationController.h; sourceTree = "<group>"; };
 		1EBE6AB91C7F2B2100E3FDB4 /* SHNNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNNavigationController.m; sourceTree = "<group>"; };
 		1EBE6ABB1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNFriendTrendsViewController.xib; sourceTree = "<group>"; };
@@ -158,6 +168,8 @@
 			children = (
 				1E4B724D1C82F1C30009C81F /* SHNRecomendCatogory.h */,
 				1E4B724E1C82F1C30009C81F /* SHNRecomendCatogory.m */,
+				1EAD822F1C85C1D2008E5DCB /* SHNRecommendUser.h */,
+				1EAD82301C85C1D2008E5DCB /* SHNRecommendUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +180,9 @@
 				1E4B72501C82F1F20009C81F /* SHNRecomendCategoryCell.h */,
 				1E4B72511C82F1F20009C81F /* SHNRecomendCategoryCell.m */,
 				1E4B72531C82F23D0009C81F /* SHNRecomendCategoryCell.xib */,
+				1EAD82321C85C204008E5DCB /* SHNRecommendUserCell.h */,
+				1EAD82331C85C204008E5DCB /* SHNRecommendUserCell.m */,
+				1EAD82341C85C204008E5DCB /* SHNRecommendUserCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -248,6 +263,7 @@
 				1ED4C6A11C7DFBCB009417C9 /* AppDelegate.m */,
 				1ED4C6AA1C7DFBCB009417C9 /* main.m */,
 				1ED4C6AB1C7DFBCB009417C9 /* PrefixHeader.pch */,
+				1E4B72551C82FD1E0009C81F /* Foundation+Log.m */,
 			);
 			path = "Other-其他";
 			sourceTree = "<group>";
@@ -432,6 +448,7 @@
 			files = (
 				1E4B72541C82F23D0009C81F /* SHNRecomendCategoryCell.xib in Resources */,
 				1EBE6ABC1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib in Resources */,
+				1EAD82361C85C204008E5DCB /* SHNRecommendUserCell.xib in Resources */,
 				1E4B724C1C82E1850009C81F /* SHNRecomendViewController.xib in Resources */,
 				1EEB52091C7C8B2800953ECC /* Assets.xcassets in Resources */,
 			);
@@ -495,9 +512,12 @@
 				1ED4C6B31C7DFBCB009417C9 /* AppDelegate.m in Sources */,
 				1ED4C6B11C7DFBCB009417C9 /* SHNMeViewController.m in Sources */,
 				1ED4C6AF1C7DFBCB009417C9 /* SHNEssenceViewController.m in Sources */,
+				1E4B72561C82FD1E0009C81F /* Foundation+Log.m in Sources */,
+				1EAD82351C85C204008E5DCB /* SHNRecommendUserCell.m in Sources */,
 				1ED4C6B61C7DFBCB009417C9 /* SHNTabViewController.m in Sources */,
 				1E4B72521C82F1F20009C81F /* SHNRecomendCategoryCell.m in Sources */,
 				1ED4C6B21C7DFBCB009417C9 /* SHNNewViewController.m in Sources */,
+				1EAD82311C85C1D2008E5DCB /* SHNRecommendUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

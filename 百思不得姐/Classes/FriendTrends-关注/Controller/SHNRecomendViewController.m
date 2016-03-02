@@ -283,5 +283,7 @@ static NSString * const XMGUserId = @"user";
     }
 }
 
-
+- (void)dealloc {
+    [self.manager.operationQueue cancelAllOperations];
+}
 @end

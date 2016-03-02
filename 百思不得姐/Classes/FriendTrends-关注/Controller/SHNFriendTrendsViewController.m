@@ -28,7 +28,6 @@
 }
 - (void)friendsClick
 {
-    SHNLogFunc;
     SHNRecomendViewController *recomendVC = [[SHNRecomendViewController alloc] init];
     [self.navigationController pushViewController:recomendVC animated:YES];
 }

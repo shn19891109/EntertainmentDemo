@@ -7,6 +7,7 @@
 //
 
 #import "SHNEssenceViewController.h"
+#import "SHNRecomendTagsController.h"
 
 @interface SHNEssenceViewController ()
 
@@ -29,7 +30,10 @@
 }
 
 - (void)tagClick {
-    SHNLogFunc;
+
+    SHNRecomendTagsController *tags = [[SHNRecomendTagsController alloc] init];
+
+    [self.navigationController pushViewController:tags animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

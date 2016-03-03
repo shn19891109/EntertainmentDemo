@@ -8,6 +8,8 @@
 
 #import "SHNFriendTrendsViewController.h"
 #import "SHNRecomendViewController.h"
+#import "SHNLoginRegisterViewController.h"
+
 @interface SHNFriendTrendsViewController ()
 
 @end
@@ -26,10 +28,16 @@
     self.view.backgroundColor = SHNGlobalBg;
 
 }
+#pragma mark ---导航栏左边的按钮--
 - (void)friendsClick
 {
     SHNRecomendViewController *recomendVC = [[SHNRecomendViewController alloc] init];
     [self.navigationController pushViewController:recomendVC animated:YES];
+}
+#pragma mark --登录注册
+- (IBAction)loginRegister:(UIButton *)sender {
+    SHNLoginRegisterViewController *loginVC = [[SHNLoginRegisterViewController alloc] init];
+    [self presentViewController:loginVC animated:YES completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {

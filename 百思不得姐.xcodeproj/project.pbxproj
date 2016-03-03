@@ -23,6 +23,10 @@
 		1EAD823E1C85CFE7008E5DCB /* SHNRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD823D1C85CFE7008E5DCB /* SHNRecommendTag.m */; };
 		1EBE6ABA1C7F2B2100E3FDB4 /* SHNNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBE6AB91C7F2B2100E3FDB4 /* SHNNavigationController.m */; };
 		1EBE6ABC1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EBE6ABB1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib */; };
+		1EBEBF751C88623A00778692 /* SHNTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBEBF741C88623A00778692 /* SHNTextField.m */; };
+		1EBEBF791C88760600778692 /* SHNLoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBEBF771C88760600778692 /* SHNLoginRegisterViewController.m */; };
+		1EBEBF7A1C88760600778692 /* SHNLoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EBEBF781C88760600778692 /* SHNLoginRegisterViewController.xib */; };
+		1EBEBF7D1C8876B800778692 /* SHNVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBEBF7C1C8876B800778692 /* SHNVerticalButton.m */; };
 		1ED4C6AF1C7DFBCB009417C9 /* SHNEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C68C1C7DFBCB009417C9 /* SHNEssenceViewController.m */; };
 		1ED4C6B01C7DFBCB009417C9 /* SHNFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6901C7DFBCB009417C9 /* SHNFriendTrendsViewController.m */; };
 		1ED4C6B11C7DFBCB009417C9 /* SHNMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6961C7DFBCB009417C9 /* SHNMeViewController.m */; };
@@ -72,6 +76,13 @@
 		1EBE6AB81C7F2B2100E3FDB4 /* SHNNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNNavigationController.h; sourceTree = "<group>"; };
 		1EBE6AB91C7F2B2100E3FDB4 /* SHNNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNNavigationController.m; sourceTree = "<group>"; };
 		1EBE6ABB1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNFriendTrendsViewController.xib; sourceTree = "<group>"; };
+		1EBEBF731C88623A00778692 /* SHNTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNTextField.h; sourceTree = "<group>"; };
+		1EBEBF741C88623A00778692 /* SHNTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNTextField.m; sourceTree = "<group>"; };
+		1EBEBF761C88760600778692 /* SHNLoginRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNLoginRegisterViewController.h; sourceTree = "<group>"; };
+		1EBEBF771C88760600778692 /* SHNLoginRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNLoginRegisterViewController.m; sourceTree = "<group>"; };
+		1EBEBF781C88760600778692 /* SHNLoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNLoginRegisterViewController.xib; sourceTree = "<group>"; };
+		1EBEBF7B1C8876B800778692 /* SHNVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNVerticalButton.h; sourceTree = "<group>"; };
+		1EBEBF7C1C8876B800778692 /* SHNVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNVerticalButton.m; sourceTree = "<group>"; };
 		1ED4C68B1C7DFBCB009417C9 /* SHNEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNEssenceViewController.h; sourceTree = "<group>"; };
 		1ED4C68C1C7DFBCB009417C9 /* SHNEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNEssenceViewController.m; sourceTree = "<group>"; };
 		1ED4C68F1C7DFBCB009417C9 /* SHNFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNFriendTrendsViewController.h; sourceTree = "<group>"; };
@@ -193,6 +204,9 @@
 				1E4B72481C82E1850009C81F /* SHNRecomendViewController.h */,
 				1E4B72491C82E1850009C81F /* SHNRecomendViewController.m */,
 				1E4B724A1C82E1850009C81F /* SHNRecomendViewController.xib */,
+				1EBEBF761C88760600778692 /* SHNLoginRegisterViewController.h */,
+				1EBEBF771C88760600778692 /* SHNLoginRegisterViewController.m */,
+				1EBEBF781C88760600778692 /* SHNLoginRegisterViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -217,6 +231,8 @@
 				1EAD82321C85C204008E5DCB /* SHNRecommendUserCell.h */,
 				1EAD82331C85C204008E5DCB /* SHNRecommendUserCell.m */,
 				1EAD82341C85C204008E5DCB /* SHNRecommendUserCell.xib */,
+				1EBEBF7B1C8876B800778692 /* SHNVerticalButton.h */,
+				1EBEBF7C1C8876B800778692 /* SHNVerticalButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,6 +266,8 @@
 		1ED4C6981C7DFBCB009417C9 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1EBEBF731C88623A00778692 /* SHNTextField.h */,
+				1EBEBF741C88623A00778692 /* SHNTextField.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -480,6 +498,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EBEBF7A1C88760600778692 /* SHNLoginRegisterViewController.xib in Resources */,
 				1E4B72541C82F23D0009C81F /* SHNRecomendCategoryCell.xib in Resources */,
 				1EBE6ABC1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib in Resources */,
 				1EAD82361C85C204008E5DCB /* SHNRecommendUserCell.xib in Resources */,
@@ -539,6 +558,7 @@
 				1ED4C6B71C7DFBCB009417C9 /* main.m in Sources */,
 				1ED4C6B81C7DFBCB009417C9 /* SHNTabBar.m in Sources */,
 				1EAD823E1C85CFE7008E5DCB /* SHNRecommendTag.m in Sources */,
+				1EBEBF751C88623A00778692 /* SHNTextField.m in Sources */,
 				1EBE6ABA1C7F2B2100E3FDB4 /* SHNNavigationController.m in Sources */,
 				1E4B724B1C82E1850009C81F /* SHNRecomendViewController.m in Sources */,
 				1ED4C6B41C7DFBCB009417C9 /* UIBarButtonItem+SHNExtension.m in Sources */,
@@ -547,10 +567,12 @@
 				1ED4C6B01C7DFBCB009417C9 /* SHNFriendTrendsViewController.m in Sources */,
 				1ED4C6B51C7DFBCB009417C9 /* UIView+SHNExtension.m in Sources */,
 				1ED4C6B31C7DFBCB009417C9 /* AppDelegate.m in Sources */,
+				1EBEBF791C88760600778692 /* SHNLoginRegisterViewController.m in Sources */,
 				1ED4C6B11C7DFBCB009417C9 /* SHNMeViewController.m in Sources */,
 				1ED4C6AF1C7DFBCB009417C9 /* SHNEssenceViewController.m in Sources */,
 				1E4B72561C82FD1E0009C81F /* Foundation+Log.m in Sources */,
 				1EAD82351C85C204008E5DCB /* SHNRecommendUserCell.m in Sources */,
+				1EBEBF7D1C8876B800778692 /* SHNVerticalButton.m in Sources */,
 				1EAD82391C85CECD008E5DCB /* SHNRecomendTagsController.m in Sources */,
 				1ED4C6B61C7DFBCB009417C9 /* SHNTabViewController.m in Sources */,
 				1E4B72521C82F1F20009C81F /* SHNRecomendCategoryCell.m in Sources */,

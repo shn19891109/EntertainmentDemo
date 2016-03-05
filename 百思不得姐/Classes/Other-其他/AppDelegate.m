@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 #import "SHNTabViewController.h"
+
+#import "SHNPushGuideView.h"
+
+
 @interface AppDelegate ()
 
 @end
@@ -25,6 +29,8 @@
     
     //显示窗口
     [self.window makeKeyAndVisible];
+    // 显示推送引导
+    [SHNPushGuideView showView];
     return YES;
 }
 

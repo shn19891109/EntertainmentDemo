@@ -10,6 +10,11 @@
 		02176CC71A5871480CBF59B0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90340C6F97E1864E32D7EDAF /* libPods.a */; };
 		1E21396D1C8A701E00D94018 /* SHNPushGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E21396C1C8A701E00D94018 /* SHNPushGuideView.m */; };
 		1E21396F1C8A703000D94018 /* SHNPushGuideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E21396E1C8A703000D94018 /* SHNPushGuideView.xib */; };
+		1E2139721C8AE57200D94018 /* SHNAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2139711C8AE57100D94018 /* SHNAllViewController.m */; };
+		1E2139751C8AE5B300D94018 /* SHNVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2139741C8AE5B300D94018 /* SHNVideoViewController.m */; };
+		1E2139781C8AE5D600D94018 /* SHNVoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E2139771C8AE5D600D94018 /* SHNVoiceViewController.m */; };
+		1E21397B1C8AE5F700D94018 /* SHNPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E21397A1C8AE5F700D94018 /* SHNPictureViewController.m */; };
+		1E21397E1C8AE61200D94018 /* SHNWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E21397D1C8AE61200D94018 /* SHNWordViewController.m */; };
 		1E39DD1F1C87229E00E4F9E3 /* SHNRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E39DD1D1C87229E00E4F9E3 /* SHNRecommendTagCell.m */; };
 		1E39DD201C87229E00E4F9E3 /* SHNRecommendTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E39DD1E1C87229E00E4F9E3 /* SHNRecommendTagCell.xib */; };
 		1E4B724B1C82E1850009C81F /* SHNRecomendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4B72491C82E1850009C81F /* SHNRecomendViewController.m */; };
@@ -57,6 +62,16 @@
 		1E21396B1C8A701E00D94018 /* SHNPushGuideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNPushGuideView.h; sourceTree = "<group>"; };
 		1E21396C1C8A701E00D94018 /* SHNPushGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNPushGuideView.m; sourceTree = "<group>"; };
 		1E21396E1C8A703000D94018 /* SHNPushGuideView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNPushGuideView.xib; sourceTree = "<group>"; };
+		1E2139701C8AE57100D94018 /* SHNAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNAllViewController.h; sourceTree = "<group>"; };
+		1E2139711C8AE57100D94018 /* SHNAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNAllViewController.m; sourceTree = "<group>"; };
+		1E2139731C8AE5B300D94018 /* SHNVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNVideoViewController.h; sourceTree = "<group>"; };
+		1E2139741C8AE5B300D94018 /* SHNVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNVideoViewController.m; sourceTree = "<group>"; };
+		1E2139761C8AE5D600D94018 /* SHNVoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNVoiceViewController.h; sourceTree = "<group>"; };
+		1E2139771C8AE5D600D94018 /* SHNVoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNVoiceViewController.m; sourceTree = "<group>"; };
+		1E2139791C8AE5F700D94018 /* SHNPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNPictureViewController.h; sourceTree = "<group>"; };
+		1E21397A1C8AE5F700D94018 /* SHNPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNPictureViewController.m; sourceTree = "<group>"; };
+		1E21397C1C8AE61200D94018 /* SHNWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNWordViewController.h; sourceTree = "<group>"; };
+		1E21397D1C8AE61200D94018 /* SHNWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNWordViewController.m; sourceTree = "<group>"; };
 		1E39DD1C1C87229E00E4F9E3 /* SHNRecommendTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNRecommendTagCell.h; sourceTree = "<group>"; };
 		1E39DD1D1C87229E00E4F9E3 /* SHNRecommendTagCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNRecommendTagCell.m; sourceTree = "<group>"; };
 		1E39DD1E1C87229E00E4F9E3 /* SHNRecommendTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNRecommendTagCell.xib; sourceTree = "<group>"; };
@@ -186,6 +201,16 @@
 				1ED4C68C1C7DFBCB009417C9 /* SHNEssenceViewController.m */,
 				1EAD82371C85CECD008E5DCB /* SHNRecomendTagsController.h */,
 				1EAD82381C85CECD008E5DCB /* SHNRecomendTagsController.m */,
+				1E2139701C8AE57100D94018 /* SHNAllViewController.h */,
+				1E2139711C8AE57100D94018 /* SHNAllViewController.m */,
+				1E2139731C8AE5B300D94018 /* SHNVideoViewController.h */,
+				1E2139741C8AE5B300D94018 /* SHNVideoViewController.m */,
+				1E2139761C8AE5D600D94018 /* SHNVoiceViewController.h */,
+				1E2139771C8AE5D600D94018 /* SHNVoiceViewController.m */,
+				1E2139791C8AE5F700D94018 /* SHNPictureViewController.h */,
+				1E21397A1C8AE5F700D94018 /* SHNPictureViewController.m */,
+				1E21397C1C8AE61200D94018 /* SHNWordViewController.h */,
+				1E21397D1C8AE61200D94018 /* SHNWordViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -568,6 +593,7 @@
 				1ED4C6B81C7DFBCB009417C9 /* SHNTabBar.m in Sources */,
 				1EAD823E1C85CFE7008E5DCB /* SHNRecommendTag.m in Sources */,
 				1EBEBF831C887DF200778692 /* SHNTextField.m in Sources */,
+				1E2139751C8AE5B300D94018 /* SHNVideoViewController.m in Sources */,
 				1EBE6ABA1C7F2B2100E3FDB4 /* SHNNavigationController.m in Sources */,
 				1E4B724B1C82E1850009C81F /* SHNRecomendViewController.m in Sources */,
 				1ED4C6B41C7DFBCB009417C9 /* UIBarButtonItem+SHNExtension.m in Sources */,
@@ -582,6 +608,10 @@
 				1E4B72561C82FD1E0009C81F /* Foundation+Log.m in Sources */,
 				1EAD82351C85C204008E5DCB /* SHNRecommendUserCell.m in Sources */,
 				1EBEBF7D1C8876B800778692 /* SHNVerticalButton.m in Sources */,
+				1E21397E1C8AE61200D94018 /* SHNWordViewController.m in Sources */,
+				1E2139781C8AE5D600D94018 /* SHNVoiceViewController.m in Sources */,
+				1E2139721C8AE57200D94018 /* SHNAllViewController.m in Sources */,
+				1E21397B1C8AE5F700D94018 /* SHNPictureViewController.m in Sources */,
 				1EAD82391C85CECD008E5DCB /* SHNRecomendTagsController.m in Sources */,
 				1ED4C6B61C7DFBCB009417C9 /* SHNTabViewController.m in Sources */,
 				1E4B72521C82F1F20009C81F /* SHNRecomendCategoryCell.m in Sources */,

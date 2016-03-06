@@ -148,7 +148,7 @@ static NSString * const XMGUserId = @"user";
     
     self.userTableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreUsers)];
     
-    self.userTableView.mj_footer.hidden = YES;
+//    self.userTableView.mj_footer.hidden = YES;
 }
 #pragma mark - 加载用户数据
 - (void)loadNewUsers

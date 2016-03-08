@@ -8,7 +8,9 @@
 
 #import "SHNTopicCell.h"
 #import "SHNTopic.h"
+#import "SHNTopicPictureView.h"
 #import <UIImageView+WebCache.h>
+
 @interface SHNTopicCell ()
 /** 头像 */
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -25,10 +27,23 @@
 /** 评论 */
 @property (weak, nonatomic) IBOutlet UIButton *commentButton;
 @property (weak, nonatomic) IBOutlet UIImageView *sinaView;
+/** 帖子的文字内容 */
+@property (weak, nonatomic) IBOutlet UILabel *text_label;
+/** 图片帖子中间的内容 */
+@property (nonatomic, weak) SHNTopicPictureView *pictureView;
 
 @end
 
 @implementation SHNTopicCell
+
+- (SHNTopicPictureView *)pictureView {
+    if (!_pictureView) {
+        SHNTopicPictureView *pictureView = [SHNTopicPictureView pictureView];
+        [self.contentView addSubview:pictureView];
+        _pictureView = pictureView;
+    }
+    return _pictureView;
+}
 
 //添加背景图片
 - (void)awakeFromNib
@@ -71,7 +86,15 @@
     [self setupButtonTitle:self.caiButton count:topic.cai placeholder:@"踩"];
     [self setupButtonTitle:self.shareButton count:topic.repost placeholder:@"分享"];
     [self setupButtonTitle:self.commentButton count:topic.comment placeholder:@"评论"];
+    // 设置帖子的文字内容
+    self.text_label.text = topic.text;
+    // 根据模型类型(帖子类型)添加对应的内容到cell的中间
+    if (topic.type == SHNTopicTypePicture) {
+        self.pictureView.frame = topic.pictureF; // 图片帖子
+        self.pictureView.topic = topic;
+    } else if (topic.type == SHNTopicTypeVoice) { // 声音帖子
     
+    }
 }
 /**
  *  设置底部按钮文字

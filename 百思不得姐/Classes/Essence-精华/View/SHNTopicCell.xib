@@ -84,7 +84,7 @@
                                 <state key="highlighted" image="mainCellCommentClick"/>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cell-button-line" translatesAutoresizingMaskIntoConstraints="NO" id="cTw-1f-e1h" userLabel="分割线">
-                                <rect key="frame" x="80" y="15" width="1" height="29"/>
+                                <rect key="frame" x="80" y="0.0" width="1" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="1" id="keN-aj-8aB"/>
                                 </constraints>
@@ -131,6 +131,7 @@
                             <constraint firstItem="1u6-wQ-etb" firstAttribute="top" secondItem="Qlz-vd-HFi" secondAttribute="top" id="ceg-Pk-xr9"/>
                             <constraint firstItem="Sgx-SS-tiS" firstAttribute="top" secondItem="pY5-iO-9dr" secondAttribute="top" constant="-1" id="dvy-cB-z18"/>
                             <constraint firstItem="v2E-XT-uj9" firstAttribute="leading" secondItem="Qlz-vd-HFi" secondAttribute="leading" id="gbw-wD-BH4"/>
+                            <constraint firstItem="cTw-1f-e1h" firstAttribute="top" secondItem="Qlz-vd-HFi" secondAttribute="top" id="hqM-dw-0G3"/>
                             <constraint firstAttribute="trailing" secondItem="v2E-XT-uj9" secondAttribute="trailing" id="hrQ-ZJ-UhY"/>
                             <constraint firstItem="dJe-XO-rtO" firstAttribute="leading" secondItem="pY5-iO-9dr" secondAttribute="trailing" id="jR3-4A-i3i"/>
                             <constraint firstItem="dJe-XO-rtO" firstAttribute="width" secondItem="ZyH-yo-73B" secondAttribute="width" id="jxn-D1-5Re"/>
@@ -154,7 +155,7 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWa-5p-waE">
                         <rect key="frame" x="10" y="55" width="300" height="16"/>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
@@ -186,8 +187,9 @@
                 <outlet property="profileImageView" destination="Nvy-Jw-J6S" id="Tav-bN-2WD"/>
                 <outlet property="shareButton" destination="pY5-iO-9dr" id="6hE-do-IB5"/>
                 <outlet property="sinaView" destination="WSN-aZ-cRS" id="Nt0-Q1-joA"/>
+                <outlet property="text_label" destination="MWa-5p-waE" id="qtv-Ra-XRs"/>
             </connections>
-            <point key="canvasLocation" x="370" y="260.5"/>
+            <point key="canvasLocation" x="299" y="254.5"/>
         </tableViewCell>
     </objects>
     <resources>

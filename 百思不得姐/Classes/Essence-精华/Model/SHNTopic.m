@@ -7,8 +7,13 @@
 //
 
 #import "SHNTopic.h"
+#import <MJExtension.h>
 
 @implementation SHNTopic
+{
+    CGFloat _cellHeight;
+    CGRect _pictureF;
+}
 
 - (NSString *)create_time {
     //日期格式化类
@@ -40,4 +45,50 @@
         return _create_time;
     }
 }
+
++ (NSDictionary *)replacedKeyFromPropertyName
+{
+    return @{
+             @"small_image" : @"image0",
+             @"large_image" : @"image1",
+             @"middle_image" : @"image2"
+             };
+}
+
+- (CGFloat)cellHeight {
+    if (!_cellHeight) {
+        //文件的最大尺寸
+        CGSize maxSize = CGSizeMake([UIScreen mainScreen].bounds.size.width - 4 * SHNTopicCellMargin, MAXFLOAT);
+        //计算文字的高度
+        CGFloat textH = [self.text boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:14]} context:nil].size.height;
+        // cell的高度
+        // 文字部分的高度
+        _cellHeight = SHNTopicCellTextY + textH + SHNTopicCellMargin;
+        // 根据段子的类型来计算cell的高度
+        if (self.type == SHNTopicTypePicture) { // 图片帖子
+            // 图片显示出来的宽度
+            CGFloat pictureW = maxSize.width;
+            // 显示显示出来的高度
+            CGFloat pictureH = pictureW *self.height /self.width;
+            if (pictureH >= SHNTopicCellPictureMaxH) {
+                pictureH = SHNTopicCellPictureBreakH;
+                self.bigPicture = YES;   //大图
+            }
+            // 计算图片控件的frame
+            CGFloat pictureX = SHNTopicCellMargin;
+            CGFloat pictureY = SHNTopicCellTextY + textH + SHNTopicCellMargin;
+            _pictureF = CGRectMake(pictureX, pictureY, pictureW, pictureH);
+            
+            _cellHeight += pictureH + SHNTopicCellMargin;
+        } else if (self.type == SHNTopicTypeVideo) {
+        
+        }
+        //底部工具条的高度
+        _cellHeight += SHNTopicCellBottomBarH + SHNTopicCellMargin;
+
+    }
+    return _cellHeight;
+}
+
+
 @end

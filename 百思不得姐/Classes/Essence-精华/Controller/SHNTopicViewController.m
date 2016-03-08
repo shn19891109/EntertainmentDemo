@@ -182,7 +182,10 @@ static NSString * const SHNTopicCellId = @"topic";
 #pragma mark - 代理方法
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 200;
+    // 取出帖子模型
+    SHNTopic *topic = self.topics[indexPath.row];
+    // 返回这个模型对应的cell高度
+    return topic.cellHeight;
 }
 
 @end

@@ -28,6 +28,9 @@
 		1E4B72521C82F1F20009C81F /* SHNRecomendCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4B72511C82F1F20009C81F /* SHNRecomendCategoryCell.m */; };
 		1E4B72541C82F23D0009C81F /* SHNRecomendCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E4B72531C82F23D0009C81F /* SHNRecomendCategoryCell.xib */; };
 		1E4B72561C82FD1E0009C81F /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4B72551C82FD1E0009C81F /* Foundation+Log.m */; };
+		1E9AF5BA1C8F0E960035365C /* SHNTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AF5B91C8F0E960035365C /* SHNTopicPictureView.m */; };
+		1E9AF5BC1C8F0EA40035365C /* SHNTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E9AF5BB1C8F0EA40035365C /* SHNTopicPictureView.xib */; };
+		1E9AF5BF1C8F120A0035365C /* SHNProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AF5BE1C8F120A0035365C /* SHNProgressView.m */; };
 		1EAD82311C85C1D2008E5DCB /* SHNRecommendUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD82301C85C1D2008E5DCB /* SHNRecommendUser.m */; };
 		1EAD82351C85C204008E5DCB /* SHNRecommendUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD82331C85C204008E5DCB /* SHNRecommendUserCell.m */; };
 		1EAD82361C85C204008E5DCB /* SHNRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EAD82341C85C204008E5DCB /* SHNRecommendUserCell.xib */; };
@@ -99,6 +102,11 @@
 		1E4B72511C82F1F20009C81F /* SHNRecomendCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNRecomendCategoryCell.m; sourceTree = "<group>"; };
 		1E4B72531C82F23D0009C81F /* SHNRecomendCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNRecomendCategoryCell.xib; sourceTree = "<group>"; };
 		1E4B72551C82FD1E0009C81F /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		1E9AF5B81C8F0E960035365C /* SHNTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNTopicPictureView.h; sourceTree = "<group>"; };
+		1E9AF5B91C8F0E960035365C /* SHNTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNTopicPictureView.m; sourceTree = "<group>"; };
+		1E9AF5BB1C8F0EA40035365C /* SHNTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNTopicPictureView.xib; sourceTree = "<group>"; };
+		1E9AF5BD1C8F120A0035365C /* SHNProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNProgressView.h; sourceTree = "<group>"; };
+		1E9AF5BE1C8F120A0035365C /* SHNProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNProgressView.m; sourceTree = "<group>"; };
 		1EAD822F1C85C1D2008E5DCB /* SHNRecommendUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNRecommendUser.h; sourceTree = "<group>"; };
 		1EAD82301C85C1D2008E5DCB /* SHNRecommendUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNRecommendUser.m; sourceTree = "<group>"; };
 		1EAD82321C85C204008E5DCB /* SHNRecommendUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNRecommendUserCell.h; sourceTree = "<group>"; };
@@ -190,6 +198,11 @@
 				1E2139851C8BC22A00D94018 /* SHNTopicCell.h */,
 				1E2139861C8BC22A00D94018 /* SHNTopicCell.m */,
 				1E2139871C8BC22A00D94018 /* SHNTopicCell.xib */,
+				1E9AF5B81C8F0E960035365C /* SHNTopicPictureView.h */,
+				1E9AF5B91C8F0E960035365C /* SHNTopicPictureView.m */,
+				1E9AF5BB1C8F0EA40035365C /* SHNTopicPictureView.xib */,
+				1E9AF5BD1C8F120A0035365C /* SHNProgressView.h */,
+				1E9AF5BE1C8F120A0035365C /* SHNProgressView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -568,6 +581,7 @@
 				1E39DD201C87229E00E4F9E3 /* SHNRecommendTagCell.xib in Resources */,
 				1E2139891C8BC22A00D94018 /* SHNTopicCell.xib in Resources */,
 				1E21396F1C8A703000D94018 /* SHNPushGuideView.xib in Resources */,
+				1E9AF5BC1C8F0EA40035365C /* SHNTopicPictureView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,9 +661,11 @@
 				1E21397B1C8AE5F700D94018 /* SHNPictureViewController.m in Sources */,
 				1EAD82391C85CECD008E5DCB /* SHNRecomendTagsController.m in Sources */,
 				1ED4C6B61C7DFBCB009417C9 /* SHNTabViewController.m in Sources */,
+				1E9AF5BA1C8F0E960035365C /* SHNTopicPictureView.m in Sources */,
 				1E4B72521C82F1F20009C81F /* SHNRecomendCategoryCell.m in Sources */,
 				1ED4C6B21C7DFBCB009417C9 /* SHNNewViewController.m in Sources */,
 				1E2139841C8BBFC900D94018 /* SHNConst.m in Sources */,
+				1E9AF5BF1C8F120A0035365C /* SHNProgressView.m in Sources */,
 				1EAD82311C85C1D2008E5DCB /* SHNRecommendUser.m in Sources */,
 				1E21396D1C8A701E00D94018 /* SHNPushGuideView.m in Sources */,
 			);

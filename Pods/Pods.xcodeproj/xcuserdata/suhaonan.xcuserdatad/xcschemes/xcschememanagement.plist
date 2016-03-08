@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>DACircularProgress.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MJExtension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -37,17 +42,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>12A9D16242A7CDA5FF97FBDAB87E97FF</key>
+		<key>26F5D5F94134C9033A3BCBBF9640EDCD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>30722DBA266C83C3AB19DA52408E55D5</key>
+		<key>42BDC6D07BB1DEA3512C3A92103E73BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>380B486710C44C46891F7424F38C127F</key>
+		<key>4F14EE7A9D6F0AC53E299AF2387BDE86</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,12 +62,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>A941B45B8136D348961BF5F1D5382EF0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B281DA29A9C3EDFB45BA53651F6BA611</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C5CD62F9284D3D7458C7139160948492</key>
+		<key>C40EE296B037F7EC2AB9BBB0515F2BAE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

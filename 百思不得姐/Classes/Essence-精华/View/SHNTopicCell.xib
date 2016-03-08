@@ -22,13 +22,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vs4-UH-426" userLabel="昵称">
-                        <rect key="frame" x="55" y="10" width="38" height="18"/>
+                        <rect key="frame" x="55" y="10" width="37.5" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hf-M8-tB2" userLabel="时间">
-                        <rect key="frame" x="55" y="30" width="31" height="15"/>
+                        <rect key="frame" x="55" y="30" width="31" height="14.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
@@ -144,11 +144,28 @@
                             <constraint firstItem="Sgx-SS-tiS" firstAttribute="leading" secondItem="Qlz-vd-HFi" secondAttribute="leading" id="y4X-Ku-A3v"/>
                         </constraints>
                     </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile_AddV_authen" translatesAutoresizingMaskIntoConstraints="NO" id="WSN-aZ-cRS">
+                        <rect key="frame" x="32" y="31" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="0HH-In-Zir"/>
+                            <constraint firstAttribute="width" constant="14" id="7lH-mx-OKC"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWa-5p-waE">
+                        <rect key="frame" x="10" y="55" width="300" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="0hf-M8-tB2" firstAttribute="leading" secondItem="vs4-UH-426" secondAttribute="leading" id="Ad1-WY-vH6"/>
                     <constraint firstItem="Qlz-vd-HFi" firstAttribute="leading" secondItem="ijl-2P-1ev" secondAttribute="leading" id="NEG-01-fEH"/>
                     <constraint firstAttribute="trailing" secondItem="943-SJ-FNy" secondAttribute="trailing" constant="10" id="T0q-Vs-31K"/>
+                    <constraint firstItem="WSN-aZ-cRS" firstAttribute="bottom" secondItem="Nvy-Jw-J6S" secondAttribute="bottom" id="UGW-sM-Paw"/>
+                    <constraint firstItem="MWa-5p-waE" firstAttribute="leading" secondItem="ijl-2P-1ev" secondAttribute="leading" constant="10" id="Vzp-g6-Fld"/>
+                    <constraint firstAttribute="trailing" secondItem="MWa-5p-waE" secondAttribute="trailing" constant="10" id="YPu-o6-74x"/>
+                    <constraint firstItem="MWa-5p-waE" firstAttribute="top" secondItem="WSN-aZ-cRS" secondAttribute="bottom" constant="10" id="agx-KF-ObW"/>
                     <constraint firstItem="Nvy-Jw-J6S" firstAttribute="top" secondItem="ijl-2P-1ev" secondAttribute="top" constant="10" id="fch-W2-8RC"/>
                     <constraint firstItem="0hf-M8-tB2" firstAttribute="bottom" secondItem="Nvy-Jw-J6S" secondAttribute="bottom" id="fd7-jq-1Z9"/>
                     <constraint firstAttribute="trailing" secondItem="Qlz-vd-HFi" secondAttribute="trailing" id="j0q-7f-7Fk"/>
@@ -156,6 +173,7 @@
                     <constraint firstItem="vs4-UH-426" firstAttribute="leading" secondItem="Nvy-Jw-J6S" secondAttribute="trailing" constant="10" id="lFb-o6-Bmk"/>
                     <constraint firstItem="943-SJ-FNy" firstAttribute="top" secondItem="vs4-UH-426" secondAttribute="top" id="qIx-hb-kTL"/>
                     <constraint firstItem="Nvy-Jw-J6S" firstAttribute="top" secondItem="vs4-UH-426" secondAttribute="top" id="r9t-3I-rxW"/>
+                    <constraint firstItem="WSN-aZ-cRS" firstAttribute="trailing" secondItem="Nvy-Jw-J6S" secondAttribute="trailing" constant="1" id="sWu-0n-y6g"/>
                     <constraint firstAttribute="bottom" secondItem="Qlz-vd-HFi" secondAttribute="bottom" id="xaR-rF-4fw"/>
                 </constraints>
             </tableViewCellContentView>
@@ -167,11 +185,13 @@
                 <outlet property="nameLabel" destination="vs4-UH-426" id="7Yl-aI-Jsc"/>
                 <outlet property="profileImageView" destination="Nvy-Jw-J6S" id="Tav-bN-2WD"/>
                 <outlet property="shareButton" destination="pY5-iO-9dr" id="6hE-do-IB5"/>
+                <outlet property="sinaView" destination="WSN-aZ-cRS" id="Nt0-Q1-joA"/>
             </connections>
-            <point key="canvasLocation" x="226" y="250.5"/>
+            <point key="canvasLocation" x="370" y="260.5"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="Profile_AddV_authen" width="14" height="14"/>
         <image name="cell-button-line" width="1" height="29"/>
         <image name="cell-content-line" width="299" height="1"/>
         <image name="cellFollowClickIcon" width="19" height="20"/>

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SHNTopicViewController.h"
 
-@interface SHNPictureViewController : UITableViewController
+@interface SHNPictureViewController : SHNTopicViewController
 
 @end

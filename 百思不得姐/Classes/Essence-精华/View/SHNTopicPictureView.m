@@ -9,6 +9,7 @@
 #import "SHNTopicPictureView.h"
 #import "SHNProgressView.h"
 #import <UIImageView+WebCache.h>
+#import "SHNShowPictureViewController.h"
 
 #import "SHNTopic.h"
 
@@ -36,17 +37,26 @@
     self.imageView.userInteractionEnabled = YES;
     [self.imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(showPicture)]];
 }
+- (void)showPicture
+{
+    SHNShowPictureViewController *showPicture = [[SHNShowPictureViewController alloc] init];
+    showPicture.topic = self.topic;
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:showPicture animated:YES completion:nil];
+}
 
 - (void)setTopic:(SHNTopic *)topic {
     _topic = topic;
+    
+    // 立马显示最新的进度值(防止因为网速慢, 导致显示的是其他图片的下载进度)
+    [self.progressView setProgress:self.topic.pictureProgress animated:YES];
     
     //设置图片
     [self.imageView sd_setImageWithURL:[NSURL URLWithString:topic.large_image] placeholderImage:nil options:0 progress:^(NSInteger receivedSize, NSInteger expectedSize) {
         
         self.progressView.hidden = NO;
-        CGFloat progress = 1.0 * receivedSize / expectedSize;
-        [self.progressView setProgress:progress];
-        
+        // 计算进度值
+        topic.pictureProgress = 1.0 * receivedSize / expectedSize;
+        [self.progressView setProgress:topic.pictureProgress animated:YES];
         
     } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         self.progressView.hidden = YES;

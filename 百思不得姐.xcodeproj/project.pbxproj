@@ -28,6 +28,8 @@
 		1E4B72521C82F1F20009C81F /* SHNRecomendCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4B72511C82F1F20009C81F /* SHNRecomendCategoryCell.m */; };
 		1E4B72541C82F23D0009C81F /* SHNRecomendCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E4B72531C82F23D0009C81F /* SHNRecomendCategoryCell.xib */; };
 		1E4B72561C82FD1E0009C81F /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4B72551C82FD1E0009C81F /* Foundation+Log.m */; };
+		1E8E6C511C90491D00AC6D79 /* SHNShowPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E6C4F1C90491D00AC6D79 /* SHNShowPictureViewController.m */; };
+		1E8E6C521C90491D00AC6D79 /* SHNShowPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E6C501C90491D00AC6D79 /* SHNShowPictureViewController.xib */; };
 		1E9AF5BA1C8F0E960035365C /* SHNTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AF5B91C8F0E960035365C /* SHNTopicPictureView.m */; };
 		1E9AF5BC1C8F0EA40035365C /* SHNTopicPictureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E9AF5BB1C8F0EA40035365C /* SHNTopicPictureView.xib */; };
 		1E9AF5BF1C8F120A0035365C /* SHNProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AF5BE1C8F120A0035365C /* SHNProgressView.m */; };
@@ -102,6 +104,9 @@
 		1E4B72511C82F1F20009C81F /* SHNRecomendCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNRecomendCategoryCell.m; sourceTree = "<group>"; };
 		1E4B72531C82F23D0009C81F /* SHNRecomendCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNRecomendCategoryCell.xib; sourceTree = "<group>"; };
 		1E4B72551C82FD1E0009C81F /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		1E8E6C4E1C90491D00AC6D79 /* SHNShowPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNShowPictureViewController.h; sourceTree = "<group>"; };
+		1E8E6C4F1C90491D00AC6D79 /* SHNShowPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNShowPictureViewController.m; sourceTree = "<group>"; };
+		1E8E6C501C90491D00AC6D79 /* SHNShowPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNShowPictureViewController.xib; sourceTree = "<group>"; };
 		1E9AF5B81C8F0E960035365C /* SHNTopicPictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNTopicPictureView.h; sourceTree = "<group>"; };
 		1E9AF5B91C8F0E960035365C /* SHNTopicPictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNTopicPictureView.m; sourceTree = "<group>"; };
 		1E9AF5BB1C8F0EA40035365C /* SHNTopicPictureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNTopicPictureView.xib; sourceTree = "<group>"; };
@@ -248,6 +253,9 @@
 				1E21397D1C8AE61200D94018 /* SHNWordViewController.m */,
 				1EBE61D41C8EC21A00B9F547 /* SHNTopicViewController.h */,
 				1EBE61D51C8EC21A00B9F547 /* SHNTopicViewController.m */,
+				1E8E6C4E1C90491D00AC6D79 /* SHNShowPictureViewController.h */,
+				1E8E6C4F1C90491D00AC6D79 /* SHNShowPictureViewController.m */,
+				1E8E6C501C90491D00AC6D79 /* SHNShowPictureViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -581,6 +589,7 @@
 				1E39DD201C87229E00E4F9E3 /* SHNRecommendTagCell.xib in Resources */,
 				1E2139891C8BC22A00D94018 /* SHNTopicCell.xib in Resources */,
 				1E21396F1C8A703000D94018 /* SHNPushGuideView.xib in Resources */,
+				1E8E6C521C90491D00AC6D79 /* SHNShowPictureViewController.xib in Resources */,
 				1E9AF5BC1C8F0EA40035365C /* SHNTopicPictureView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,6 +673,7 @@
 				1E9AF5BA1C8F0E960035365C /* SHNTopicPictureView.m in Sources */,
 				1E4B72521C82F1F20009C81F /* SHNRecomendCategoryCell.m in Sources */,
 				1ED4C6B21C7DFBCB009417C9 /* SHNNewViewController.m in Sources */,
+				1E8E6C511C90491D00AC6D79 /* SHNShowPictureViewController.m in Sources */,
 				1E2139841C8BBFC900D94018 /* SHNConst.m in Sources */,
 				1E9AF5BF1C8F120A0035365C /* SHNProgressView.m in Sources */,
 				1EAD82311C85C1D2008E5DCB /* SHNRecommendUser.m in Sources */,

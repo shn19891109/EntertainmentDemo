@@ -60,8 +60,21 @@
         
     } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         self.progressView.hidden = YES;
+        // 如果是大图片, 才需要进行绘图处理
+        if (topic.isBigPicture == NO) {
+            return;
+        }
+        //开启图形上下文
+        UIGraphicsBeginImageContextWithOptions(topic.pictureF.size, YES, 0);
+        // 将下载完的image对象绘制到图形上下文
+        CGFloat width = topic.pictureF.size.width;
+        CGFloat height = width * image.size.height / image.size.width;
+        [image drawInRect:CGRectMake(0, 0, width, height)];
+        // 获得图片
+        self.imageView.image = UIGraphicsGetImageFromCurrentImageContext();
         
-        
+        // 结束图形上下文
+        UIGraphicsEndImageContext();
         
         
     }];

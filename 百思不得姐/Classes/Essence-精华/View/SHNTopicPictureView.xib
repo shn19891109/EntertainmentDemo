@@ -72,7 +72,7 @@
                 <outlet property="progressView" destination="ZWa-eC-lvt" id="4lh-np-hoy"/>
                 <outlet property="seeBigButton" destination="1Li-GK-oU7" id="mhS-uJ-0ed"/>
             </connections>
-            <point key="canvasLocation" x="220" y="162"/>
+            <point key="canvasLocation" x="35" y="122"/>
         </view>
     </objects>
     <resources>

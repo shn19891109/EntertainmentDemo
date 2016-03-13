@@ -39,20 +39,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>pop.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>26F5D5F94134C9033A3BCBBF9640EDCD</key>
+		<key>27E475092D10C06C3FE0B7C714B34651</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>42BDC6D07BB1DEA3512C3A92103E73BE</key>
+		<key>47C800E42623009B7192B025B3DD25A1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4F14EE7A9D6F0AC53E299AF2387BDE86</key>
+		<key>5167CC43C9F9866D2887191668A3265E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +67,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A941B45B8136D348961BF5F1D5382EF0</key>
+		<key>7B124FA8683B477A7CF77E5D1481E967</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,7 +77,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C40EE296B037F7EC2AB9BBB0515F2BAE</key>
+		<key>C01AF34C80098F2010F3A8CD56252637</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D7534F1F26B1E957408F288AB9163605</key>
 		<dict>
 			<key>primary</key>
 			<true/>

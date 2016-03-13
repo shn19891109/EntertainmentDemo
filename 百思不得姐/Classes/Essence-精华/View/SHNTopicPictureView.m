@@ -60,6 +60,10 @@
         
     } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         self.progressView.hidden = YES;
+        
+        
+        
+        
     }];
     
     // 判断是否为gif(还可以根据返回的第一个字节判断是否是gif图片)

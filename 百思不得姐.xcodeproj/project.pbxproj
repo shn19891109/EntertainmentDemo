@@ -38,6 +38,8 @@
 		1EAD82361C85C204008E5DCB /* SHNRecommendUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EAD82341C85C204008E5DCB /* SHNRecommendUserCell.xib */; };
 		1EAD82391C85CECD008E5DCB /* SHNRecomendTagsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD82381C85CECD008E5DCB /* SHNRecomendTagsController.m */; };
 		1EAD823E1C85CFE7008E5DCB /* SHNRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD823D1C85CFE7008E5DCB /* SHNRecommendTag.m */; };
+		1EB1B6541C919FE400B9520B /* SHNPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1B6531C919FE400B9520B /* SHNPublishView.m */; };
+		1EB1B6561C91A0F800B9520B /* SHNPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EB1B6551C91A0F800B9520B /* SHNPublishView.xib */; };
 		1EBE61D61C8EC21A00B9F547 /* SHNTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBE61D51C8EC21A00B9F547 /* SHNTopicViewController.m */; };
 		1EBE6ABA1C7F2B2100E3FDB4 /* SHNNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBE6AB91C7F2B2100E3FDB4 /* SHNNavigationController.m */; };
 		1EBE6ABC1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EBE6ABB1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib */; };
@@ -121,6 +123,9 @@
 		1EAD82381C85CECD008E5DCB /* SHNRecomendTagsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNRecomendTagsController.m; sourceTree = "<group>"; };
 		1EAD823C1C85CFE7008E5DCB /* SHNRecommendTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNRecommendTag.h; sourceTree = "<group>"; };
 		1EAD823D1C85CFE7008E5DCB /* SHNRecommendTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNRecommendTag.m; sourceTree = "<group>"; };
+		1EB1B6521C919FE400B9520B /* SHNPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNPublishView.h; sourceTree = "<group>"; };
+		1EB1B6531C919FE400B9520B /* SHNPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNPublishView.m; sourceTree = "<group>"; };
+		1EB1B6551C91A0F800B9520B /* SHNPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNPublishView.xib; sourceTree = "<group>"; };
 		1EBE61D41C8EC21A00B9F547 /* SHNTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNTopicViewController.h; sourceTree = "<group>"; };
 		1EBE61D51C8EC21A00B9F547 /* SHNTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNTopicViewController.m; sourceTree = "<group>"; };
 		1EBE6AB81C7F2B2100E3FDB4 /* SHNNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNNavigationController.h; sourceTree = "<group>"; };
@@ -417,6 +422,9 @@
 				1ED4C6A91C7DFBCB009417C9 /* SHNTabViewController.m */,
 				1EBE6AB81C7F2B2100E3FDB4 /* SHNNavigationController.h */,
 				1EBE6AB91C7F2B2100E3FDB4 /* SHNNavigationController.m */,
+				1EB1B6521C919FE400B9520B /* SHNPublishView.h */,
+				1EB1B6531C919FE400B9520B /* SHNPublishView.m */,
+				1EB1B6551C91A0F800B9520B /* SHNPublishView.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -590,6 +598,7 @@
 				1E2139891C8BC22A00D94018 /* SHNTopicCell.xib in Resources */,
 				1E21396F1C8A703000D94018 /* SHNPushGuideView.xib in Resources */,
 				1E8E6C521C90491D00AC6D79 /* SHNShowPictureViewController.xib in Resources */,
+				1EB1B6561C91A0F800B9520B /* SHNPublishView.xib in Resources */,
 				1E9AF5BC1C8F0EA40035365C /* SHNTopicPictureView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,6 +664,7 @@
 				1E39DD1F1C87229E00E4F9E3 /* SHNRecommendTagCell.m in Sources */,
 				1ED4C6B01C7DFBCB009417C9 /* SHNFriendTrendsViewController.m in Sources */,
 				1ED4C6B51C7DFBCB009417C9 /* UIView+SHNExtension.m in Sources */,
+				1EB1B6541C919FE400B9520B /* SHNPublishView.m in Sources */,
 				1ED4C6B31C7DFBCB009417C9 /* AppDelegate.m in Sources */,
 				1EBEBF791C88760600778692 /* SHNLoginRegisterViewController.m in Sources */,
 				1ED4C6B11C7DFBCB009417C9 /* SHNMeViewController.m in Sources */,

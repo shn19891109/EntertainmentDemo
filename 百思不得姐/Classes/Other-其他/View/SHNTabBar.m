@@ -7,6 +7,7 @@
 //
 
 #import "SHNTabBar.h"
+#import "SHNPublishView.h"
 
 @interface SHNTabBar ()
 /** 发布按钮 */
@@ -27,11 +28,37 @@
         [publishButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:UIControlStateNormal];
         [publishButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:UIControlStateHighlighted];
         publishButton.size = publishButton.currentBackgroundImage.size;
+        [publishButton addTarget:self action:@selector(publishClick) forControlEvents:UIControlEventTouchUpInside];
+
         [self addSubview:publishButton];
         self.publishButton = publishButton;
 
     }
     return self;
+}
+- (void)publishClick
+{
+    // 窗口级别
+    // UIWindowLevelNormal < UIWindowLevelStatusBar < UIWindowLevelAlert
+    //窗口可以屏蔽点击事件
+    
+    //    window = [[UIWindow alloc] init];
+    //    window.frame = CGRectMake(0, 0, 375, 20);
+    //    window.backgroundColor = [UIColor yellowColor];
+    //    window.windowLevel = UIWindowLevelStatusBar;
+    //    window.hidden = NO;
+    
+    //    window2 = [[UIWindow alloc] init];
+    //    window2.frame = CGRectMake(100, 100, 100, 100);
+    //    window2.backgroundColor = [UIColor redColor];
+    //    window2.hidden = NO;
+
+//    SHNPublishView *publish = [SHNPublishView show];
+//    //
+//    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+//    publish.frame = window.bounds;
+//    [window addSubview:publish];
+    [SHNPublishView show];
 }
 
 - (void)layoutSubviews {

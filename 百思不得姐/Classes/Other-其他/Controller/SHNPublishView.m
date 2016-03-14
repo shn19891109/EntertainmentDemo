@@ -15,6 +15,7 @@ static CGFloat const SHNSpringFactor = 10;
 
 @interface SHNPublishView ()
 
+@property (nonatomic,weak) UIWindow *window;
 @end
 
 @implementation SHNPublishView
@@ -38,6 +39,7 @@ static UIWindow *window_;
     SHNPublishView *publishView = [SHNPublishView publishView];
     publishView.frame = window_.bounds;
     [window_ addSubview:publishView];
+    
 }
 
 - (void)awakeFromNib {
@@ -98,9 +100,7 @@ static UIWindow *window_;
     anim.beginTime = CACurrentMediaTime() + images.count *SHNAnimationDelay;
     [anim setCompletionBlock:^(POPAnimation *anim,BOOL finish) {
         //标语动画结束，回复点击
-//        self.userInteractionEnabled = YES;
-        // 销毁窗口
-        window_ = nil;
+        self.userInteractionEnabled = YES;
     }];
     [sloganView pop_addAnimation:anim forKey:nil];
     
@@ -120,6 +120,7 @@ static UIWindow *window_;
 
 #pragma mark ---取消按扭点击--
 - (IBAction)cancel{
+    
     [self cancelWithCompletetionBlock:nil];
 }
 
@@ -145,6 +146,9 @@ static UIWindow *window_;
         //监听最后一个动画
         if (i == self.subviews.count - 1) {
             [anim setCompletionBlock:^(POPAnimation *ani, BOOL finished) {
+                // 销毁窗口
+                window_.hidden = YES;
+                window_ = nil;
                 //执行传进来的completionBlock参数
                 !completionBlock ? : completionBlock();
             }];

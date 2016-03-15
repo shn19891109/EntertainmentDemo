@@ -9,6 +9,7 @@
 #import "SHNTopicCell.h"
 #import "SHNTopic.h"
 #import "SHNTopicPictureView.h"
+#import "SHNTopicVoiceView.h"
 #import <UIImageView+WebCache.h>
 
 @interface SHNTopicCell ()
@@ -31,6 +32,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *text_label;
 /** 图片帖子中间的内容 */
 @property (nonatomic, weak) SHNTopicPictureView *pictureView;
+/** 声音帖子中间的内容 */
+@property (nonatomic, weak) SHNTopicVoiceView *voiceView;
 
 @end
 
@@ -43,6 +46,15 @@
         _pictureView = pictureView;
     }
     return _pictureView;
+}
+- (SHNTopicVoiceView *)voiceView {
+    
+    if (!_voiceView) {
+        SHNTopicVoiceView *voiceView = [SHNTopicVoiceView voiceView];
+        [self.contentView addSubview:voiceView];
+        _voiceView = voiceView;
+    }
+    return _voiceView;
 }
 
 //添加背景图片
@@ -90,10 +102,12 @@
     self.text_label.text = topic.text;
     // 根据模型类型(帖子类型)添加对应的内容到cell的中间
     if (topic.type == SHNTopicTypePicture) {
-        self.pictureView.frame = topic.pictureF; // 图片帖子
         self.pictureView.topic = topic;
+        self.pictureView.frame = topic.pictureF; // 图片帖子
     } else if (topic.type == SHNTopicTypeVoice) { // 声音帖子
-    
+        self.voiceView.topic = topic;
+        self.voiceView.frame = topic.voiceF;
+
     }
 }
 /**

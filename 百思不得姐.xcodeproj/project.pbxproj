@@ -40,6 +40,8 @@
 		1EAD823E1C85CFE7008E5DCB /* SHNRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EAD823D1C85CFE7008E5DCB /* SHNRecommendTag.m */; };
 		1EB1B6541C919FE400B9520B /* SHNPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB1B6531C919FE400B9520B /* SHNPublishView.m */; };
 		1EB1B6561C91A0F800B9520B /* SHNPublishView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EB1B6551C91A0F800B9520B /* SHNPublishView.xib */; };
+		1EB28DDF1C9835870056B0E1 /* SHNTopicVoiceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB28DDE1C9835870056B0E1 /* SHNTopicVoiceView.m */; };
+		1EB28DE11C98359B0056B0E1 /* SHNTopicVoiceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EB28DE01C98359B0056B0E1 /* SHNTopicVoiceView.xib */; };
 		1EBE61D61C8EC21A00B9F547 /* SHNTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBE61D51C8EC21A00B9F547 /* SHNTopicViewController.m */; };
 		1EBE6ABA1C7F2B2100E3FDB4 /* SHNNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EBE6AB91C7F2B2100E3FDB4 /* SHNNavigationController.m */; };
 		1EBE6ABC1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EBE6ABB1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib */; };
@@ -126,6 +128,9 @@
 		1EB1B6521C919FE400B9520B /* SHNPublishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNPublishView.h; sourceTree = "<group>"; };
 		1EB1B6531C919FE400B9520B /* SHNPublishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNPublishView.m; sourceTree = "<group>"; };
 		1EB1B6551C91A0F800B9520B /* SHNPublishView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNPublishView.xib; sourceTree = "<group>"; };
+		1EB28DDD1C9835870056B0E1 /* SHNTopicVoiceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNTopicVoiceView.h; sourceTree = "<group>"; };
+		1EB28DDE1C9835870056B0E1 /* SHNTopicVoiceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNTopicVoiceView.m; sourceTree = "<group>"; };
+		1EB28DE01C98359B0056B0E1 /* SHNTopicVoiceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNTopicVoiceView.xib; sourceTree = "<group>"; };
 		1EBE61D41C8EC21A00B9F547 /* SHNTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNTopicViewController.h; sourceTree = "<group>"; };
 		1EBE61D51C8EC21A00B9F547 /* SHNTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNTopicViewController.m; sourceTree = "<group>"; };
 		1EBE6AB81C7F2B2100E3FDB4 /* SHNNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNNavigationController.h; sourceTree = "<group>"; };
@@ -211,6 +216,9 @@
 				1E9AF5B81C8F0E960035365C /* SHNTopicPictureView.h */,
 				1E9AF5B91C8F0E960035365C /* SHNTopicPictureView.m */,
 				1E9AF5BB1C8F0EA40035365C /* SHNTopicPictureView.xib */,
+				1EB28DDD1C9835870056B0E1 /* SHNTopicVoiceView.h */,
+				1EB28DDE1C9835870056B0E1 /* SHNTopicVoiceView.m */,
+				1EB28DE01C98359B0056B0E1 /* SHNTopicVoiceView.xib */,
 				1E9AF5BD1C8F120A0035365C /* SHNProgressView.h */,
 				1E9AF5BE1C8F120A0035365C /* SHNProgressView.m */,
 			);
@@ -595,6 +603,7 @@
 				1E4B724C1C82E1850009C81F /* SHNRecomendViewController.xib in Resources */,
 				1EEB52091C7C8B2800953ECC /* Assets.xcassets in Resources */,
 				1E39DD201C87229E00E4F9E3 /* SHNRecommendTagCell.xib in Resources */,
+				1EB28DE11C98359B0056B0E1 /* SHNTopicVoiceView.xib in Resources */,
 				1E2139891C8BC22A00D94018 /* SHNTopicCell.xib in Resources */,
 				1E21396F1C8A703000D94018 /* SHNPushGuideView.xib in Resources */,
 				1E8E6C521C90491D00AC6D79 /* SHNShowPictureViewController.xib in Resources */,
@@ -651,6 +660,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ED4C6B71C7DFBCB009417C9 /* main.m in Sources */,
+				1EB28DDF1C9835870056B0E1 /* SHNTopicVoiceView.m in Sources */,
 				1ED4C6B81C7DFBCB009417C9 /* SHNTabBar.m in Sources */,
 				1E21398C1C8C3ECF00D94018 /* NSDate+Extension.m in Sources */,
 				1EAD823E1C85CFE7008E5DCB /* SHNRecommendTag.m in Sources */,

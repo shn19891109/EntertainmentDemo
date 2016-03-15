@@ -80,8 +80,16 @@
             _pictureF = CGRectMake(pictureX, pictureY, pictureW, pictureH);
             
             _cellHeight += pictureH + SHNTopicCellMargin;
-        } else if (self.type == SHNTopicTypeVideo) {
-        
+        } else if (self.type == SHNTopicTypeVoice) {
+            
+            CGFloat voiceX = SHNTopicCellMargin;
+            CGFloat voiceY = SHNTopicCellTextY + textH + SHNTopicCellMargin;
+            CGFloat voiceW = maxSize.width;
+            CGFloat voiceH = voiceW * self.height / self.width;
+            _voiceF = CGRectMake(voiceX, voiceY, voiceW, voiceH);
+            
+            _cellHeight += voiceH + SHNTopicCellMargin;
+
         }
         //底部工具条的高度
         _cellHeight += SHNTopicCellBottomBarH + SHNTopicCellMargin;

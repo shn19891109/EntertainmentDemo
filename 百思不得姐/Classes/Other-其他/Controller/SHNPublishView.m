@@ -139,6 +139,9 @@ static UIWindow *window_;
         POPBasicAnimation *anim = [POPBasicAnimation animationWithPropertyNamed:kPOPViewCenter];
         ;
         CGFloat centerY = subView.centerY + SHNScreenH;
+        // 动画的执行节奏(一开始很慢, 后面很快)
+        //        anim.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+
         anim.toValue = [NSValue valueWithCGPoint:CGPointMake(subView.centerX, centerY)];
         anim.beginTime = CACurrentMediaTime() + (i - beginIndex) * SHNAnimationDelay;
         [subView pop_addAnimation:anim forKey:nil];
@@ -155,6 +158,14 @@ static UIWindow *window_;
         }
     }
 }
+/**
+ pop和Core Animation的区别
+ 1.Core Animation的动画只能添加到layer上
+ 2.pop的动画能添加到任何对象
+ 3.pop的底层并非基于Core Animation, 是基于CADisplayLink
+ 4.Core Animation的动画仅仅是表象, 并不会真正修改对象的frame\size等值
+ 5.pop的动画实时修改对象的属性, 真正地修改了对象的属性
+ */
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self cancelWithCompletetionBlock:nil];

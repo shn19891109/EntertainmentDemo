@@ -13,6 +13,7 @@
 #import <UIImageView+WebCache.h>
 #import "SHNTopicCell.h"
 #import <MJExtension.h>
+#import "SHNCommentViewController.h"
 
 @interface SHNTopicViewController ()
 /** 帖子数据 */
@@ -95,7 +96,6 @@ static NSString * const SHNTopicCellId = @"topic";
         }
         // 存储maxtime
         self.maxtime = responseObject[@"info"][@"maxtime"];
-        NSLog(@"responseObject===%@",responseObject);
         
         // 字典 -> 模型
         self.topics = [SHNTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
@@ -187,6 +187,13 @@ static NSString * const SHNTopicCellId = @"topic";
     SHNTopic *topic = self.topics[indexPath.row];
     // 返回这个模型对应的cell高度
     return topic.cellHeight;
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    SHNCommentViewController *comment= [[SHNCommentViewController alloc] init];
+    comment.topic = self.topics[indexPath.row];
+
+    [self.navigationController pushViewController:comment animated:YES];
 }
 
 @end

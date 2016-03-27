@@ -49,6 +49,11 @@
 
 @implementation SHNTopicCell
 
++ (instancetype)cell
+{
+    return [[[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self) owner:nil options:nil] firstObject];
+}
+
 - (SHNTopicPictureView *)pictureView {
     if (!_pictureView) {
         SHNTopicPictureView *pictureView = [SHNTopicPictureView pictureView];
@@ -144,7 +149,7 @@
         self.pictureView.hidden = YES;
     }
     //处理最热评论
-    SHNComment *comt = [topic.top_cmt firstObject];
+    SHNComment *comt = topic.top_cmt;
     if (comt) {
         self.topCmtView.hidden = NO;
         self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@ : %@", comt.user.username, comt.content];
@@ -169,13 +174,18 @@
 //处理cell分割线的方法
 - (void)setFrame:(CGRect)frame {
     
-    static CGFloat margin = 10;
-    
-    frame.origin.x = margin;
-    frame.size.width -= 2*margin;
-    frame.size.height -= margin;
-    frame.origin.y += margin;
+    frame.origin.x = SHNTopicCellMargin;
+    frame.size.width -= 2*SHNTopicCellMargin;
+//    frame.size.height -= margin;
+    frame.size.height = self.topic.cellHeight - SHNTopicCellMargin;
+
+    frame.origin.y += SHNTopicCellMargin;
     [super setFrame:frame];
     
+}
+- (IBAction)more {
+//    UIActionSheet  UIAlertController
+    UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:nil delegate:nil cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"收藏", @"举报", nil];
+    [sheet showInView:self.window];
 }
 @end

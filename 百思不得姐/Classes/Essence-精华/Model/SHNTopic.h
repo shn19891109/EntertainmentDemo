@@ -8,8 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SHNTopic : NSObject
+@class SHNComment;
 
+@interface SHNTopic : NSObject
+/** id */
+@property (nonatomic, copy) NSString *ID;
 /** 名称 */
 @property (nonatomic, copy) NSString *name;
 /** 头像 */
@@ -47,8 +50,11 @@
 
 /** 播放次数 */
 @property (nonatomic, assign) NSInteger playcount;
-/** 最热评论(期望这个数组中存放的是SHNComment模型) */
-@property (nonatomic, strong) NSArray *top_cmt;
+///** 最热评论(期望这个数组中存放的是SHNComment模型) */
+//@property (nonatomic, strong) NSArray *top_cmt;
+
+/** 最热评论 */
+@property (nonatomic, strong) SHNComment *top_cmt;
 
 /****** 额外的辅助属性 ******/
 /** cell的高度 (readonly 描述只会生成getter方法)*/

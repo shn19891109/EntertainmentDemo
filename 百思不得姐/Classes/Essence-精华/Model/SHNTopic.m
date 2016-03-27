@@ -9,6 +9,8 @@
 #import "SHNTopic.h"
 #import <MJExtension.h>
 
+#import "SHNComment.h"
+
 @implementation SHNTopic
 {
     CGFloat _cellHeight;
@@ -54,6 +56,11 @@
              @"middle_image" : @"image2"
              };
 }
++ (NSDictionary *)mj_objectClassInArray {
+//    return @{@"top_cmt" : [SHNComment class]};
+    return @{@"top_cmt" : @"SHNComment"};
+
+}
 
 - (CGFloat)cellHeight {
     if (!_cellHeight) {
@@ -80,7 +87,7 @@
             _pictureF = CGRectMake(pictureX, pictureY, pictureW, pictureH);
             
             _cellHeight += pictureH + SHNTopicCellMargin;
-        } else if (self.type == SHNTopicTypeVoice) {
+        } else if (self.type == SHNTopicTypeVoice) { // 声音帖子
             
             CGFloat voiceX = SHNTopicCellMargin;
             CGFloat voiceY = SHNTopicCellTextY + textH + SHNTopicCellMargin;
@@ -89,6 +96,15 @@
             _voiceF = CGRectMake(voiceX, voiceY, voiceW, voiceH);
             
             _cellHeight += voiceH + SHNTopicCellMargin;
+
+        } else if (self.type == SHNTopicTypeVideo) { // 视频帖子
+            CGFloat videoX = SHNTopicCellMargin;
+            CGFloat videoY = SHNTopicCellTextY + textH + SHNTopicCellMargin;
+            CGFloat videoW = maxSize.width;
+            CGFloat videoH = videoW * self.height / self.width;
+            _videoF = CGRectMake(videoX, videoY, videoW, videoH);
+            
+            _cellHeight += videoH + SHNTopicCellMargin;
 
         }
         //底部工具条的高度

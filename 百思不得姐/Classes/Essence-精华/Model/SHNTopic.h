@@ -42,8 +42,13 @@
 @property (nonatomic, assign) SHNTopicType type;
 /** 音频时长 */
 @property (nonatomic, assign) NSInteger voicetime;
+/** 视频时长 */
+@property (nonatomic, assign) NSInteger videotime;
+
 /** 播放次数 */
 @property (nonatomic, assign) NSInteger playcount;
+/** 最热评论(期望这个数组中存放的是SHNComment模型) */
+@property (nonatomic, strong) NSArray *top_cmt;
 
 /****** 额外的辅助属性 ******/
 /** cell的高度 (readonly 描述只会生成getter方法)*/
@@ -57,5 +62,7 @@
 
 /** 声音控件的frame */
 @property (nonatomic, assign, readonly) CGRect voiceF;
+/** 视频控件的frame */
+@property (nonatomic, assign, readonly) CGRect videoF;
 
 @end

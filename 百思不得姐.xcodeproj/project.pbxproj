@@ -28,6 +28,10 @@
 		1E4B72521C82F1F20009C81F /* SHNRecomendCategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4B72511C82F1F20009C81F /* SHNRecomendCategoryCell.m */; };
 		1E4B72541C82F23D0009C81F /* SHNRecomendCategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E4B72531C82F23D0009C81F /* SHNRecomendCategoryCell.xib */; };
 		1E4B72561C82FD1E0009C81F /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E4B72551C82FD1E0009C81F /* Foundation+Log.m */; };
+		1E5B824F1CA7729F00F196DB /* SHNComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B824E1CA7729F00F196DB /* SHNComment.m */; };
+		1E5B82521CA772B500F196DB /* SHNUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B82511CA772B500F196DB /* SHNUser.m */; };
+		1E5B82551CA773B000F196DB /* SHNTopicVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B82541CA773B000F196DB /* SHNTopicVideoView.m */; };
+		1E5B82571CA773C000F196DB /* SHNTopicVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B82561CA773C000F196DB /* SHNTopicVideoView.xib */; };
 		1E8E6C511C90491D00AC6D79 /* SHNShowPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E6C4F1C90491D00AC6D79 /* SHNShowPictureViewController.m */; };
 		1E8E6C521C90491D00AC6D79 /* SHNShowPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E6C501C90491D00AC6D79 /* SHNShowPictureViewController.xib */; };
 		1E9AF5BA1C8F0E960035365C /* SHNTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AF5B91C8F0E960035365C /* SHNTopicPictureView.m */; };
@@ -108,6 +112,13 @@
 		1E4B72511C82F1F20009C81F /* SHNRecomendCategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNRecomendCategoryCell.m; sourceTree = "<group>"; };
 		1E4B72531C82F23D0009C81F /* SHNRecomendCategoryCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNRecomendCategoryCell.xib; sourceTree = "<group>"; };
 		1E4B72551C82FD1E0009C81F /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		1E5B824D1CA7729F00F196DB /* SHNComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNComment.h; sourceTree = "<group>"; };
+		1E5B824E1CA7729F00F196DB /* SHNComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNComment.m; sourceTree = "<group>"; };
+		1E5B82501CA772B500F196DB /* SHNUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNUser.h; sourceTree = "<group>"; };
+		1E5B82511CA772B500F196DB /* SHNUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNUser.m; sourceTree = "<group>"; };
+		1E5B82531CA773B000F196DB /* SHNTopicVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNTopicVideoView.h; sourceTree = "<group>"; };
+		1E5B82541CA773B000F196DB /* SHNTopicVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNTopicVideoView.m; sourceTree = "<group>"; };
+		1E5B82561CA773C000F196DB /* SHNTopicVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNTopicVideoView.xib; sourceTree = "<group>"; };
 		1E8E6C4E1C90491D00AC6D79 /* SHNShowPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNShowPictureViewController.h; sourceTree = "<group>"; };
 		1E8E6C4F1C90491D00AC6D79 /* SHNShowPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNShowPictureViewController.m; sourceTree = "<group>"; };
 		1E8E6C501C90491D00AC6D79 /* SHNShowPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNShowPictureViewController.xib; sourceTree = "<group>"; };
@@ -200,6 +211,10 @@
 				1EAD823D1C85CFE7008E5DCB /* SHNRecommendTag.m */,
 				1E21397F1C8BAFF100D94018 /* SHNTopic.h */,
 				1E2139801C8BAFF100D94018 /* SHNTopic.m */,
+				1E5B824D1CA7729F00F196DB /* SHNComment.h */,
+				1E5B824E1CA7729F00F196DB /* SHNComment.m */,
+				1E5B82501CA772B500F196DB /* SHNUser.h */,
+				1E5B82511CA772B500F196DB /* SHNUser.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -219,6 +234,9 @@
 				1EB28DDD1C9835870056B0E1 /* SHNTopicVoiceView.h */,
 				1EB28DDE1C9835870056B0E1 /* SHNTopicVoiceView.m */,
 				1EB28DE01C98359B0056B0E1 /* SHNTopicVoiceView.xib */,
+				1E5B82531CA773B000F196DB /* SHNTopicVideoView.h */,
+				1E5B82541CA773B000F196DB /* SHNTopicVideoView.m */,
+				1E5B82561CA773C000F196DB /* SHNTopicVideoView.xib */,
 				1E9AF5BD1C8F120A0035365C /* SHNProgressView.h */,
 				1E9AF5BE1C8F120A0035365C /* SHNProgressView.m */,
 			);
@@ -600,6 +618,7 @@
 				1E4B72541C82F23D0009C81F /* SHNRecomendCategoryCell.xib in Resources */,
 				1EBE6ABC1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib in Resources */,
 				1EAD82361C85C204008E5DCB /* SHNRecommendUserCell.xib in Resources */,
+				1E5B82571CA773C000F196DB /* SHNTopicVideoView.xib in Resources */,
 				1E4B724C1C82E1850009C81F /* SHNRecomendViewController.xib in Resources */,
 				1EEB52091C7C8B2800953ECC /* Assets.xcassets in Resources */,
 				1E39DD201C87229E00E4F9E3 /* SHNRecommendTagCell.xib in Resources */,
@@ -674,15 +693,18 @@
 				1E39DD1F1C87229E00E4F9E3 /* SHNRecommendTagCell.m in Sources */,
 				1ED4C6B01C7DFBCB009417C9 /* SHNFriendTrendsViewController.m in Sources */,
 				1ED4C6B51C7DFBCB009417C9 /* UIView+SHNExtension.m in Sources */,
+				1E5B82521CA772B500F196DB /* SHNUser.m in Sources */,
 				1EB1B6541C919FE400B9520B /* SHNPublishView.m in Sources */,
 				1ED4C6B31C7DFBCB009417C9 /* AppDelegate.m in Sources */,
 				1EBEBF791C88760600778692 /* SHNLoginRegisterViewController.m in Sources */,
 				1ED4C6B11C7DFBCB009417C9 /* SHNMeViewController.m in Sources */,
+				1E5B824F1CA7729F00F196DB /* SHNComment.m in Sources */,
 				1ED4C6AF1C7DFBCB009417C9 /* SHNEssenceViewController.m in Sources */,
 				1E2139881C8BC22A00D94018 /* SHNTopicCell.m in Sources */,
 				1E4B72561C82FD1E0009C81F /* Foundation+Log.m in Sources */,
 				1EBE61D61C8EC21A00B9F547 /* SHNTopicViewController.m in Sources */,
 				1EAD82351C85C204008E5DCB /* SHNRecommendUserCell.m in Sources */,
+				1E5B82551CA773B000F196DB /* SHNTopicVideoView.m in Sources */,
 				1EBEBF7D1C8876B800778692 /* SHNVerticalButton.m in Sources */,
 				1E21397E1C8AE61200D94018 /* SHNWordViewController.m in Sources */,
 				1E2139781C8AE5D600D94018 /* SHNVoiceViewController.m in Sources */,

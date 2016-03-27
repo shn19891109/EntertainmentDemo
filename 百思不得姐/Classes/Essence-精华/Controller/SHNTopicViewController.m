@@ -95,6 +95,7 @@ static NSString * const SHNTopicCellId = @"topic";
         }
         // 存储maxtime
         self.maxtime = responseObject[@"info"][@"maxtime"];
+        NSLog(@"responseObject===%@",responseObject);
         
         // 字典 -> 模型
         self.topics = [SHNTopic mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];

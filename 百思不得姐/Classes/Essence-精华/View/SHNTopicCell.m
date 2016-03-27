@@ -13,6 +13,9 @@
 #import "SHNTopicVideoView.h"
 #import <UIImageView+WebCache.h>
 
+#import "SHNComment.h"
+#import "SHNUser.h"
+
 @interface SHNTopicCell ()
 /** 头像 */
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
@@ -37,6 +40,10 @@
 @property (nonatomic, weak) SHNTopicVoiceView *voiceView;
 /** 视频帖子中间的内容 */
 @property (nonatomic, weak) SHNTopicVideoView  *videoView;
+/** 最热评论的内容 */
+@property (weak, nonatomic) IBOutlet UILabel *topCmtContentLabel;
+/** 最热评论的整体 */
+@property (weak, nonatomic) IBOutlet UIView *topCmtView;
 
 @end
 
@@ -135,7 +142,14 @@
         
         self.voiceView.hidden = YES;
         self.pictureView.hidden = YES;
-        
+    }
+    //处理最热评论
+    SHNComment *comt = [topic.top_cmt firstObject];
+    if (comt) {
+        self.topCmtView.hidden = NO;
+        self.topCmtContentLabel.text = [NSString stringWithFormat:@"%@ : %@", comt.user.username, comt.content];
+    } else {
+        self.topCmtView.hidden = YES;
     }
 }
 /**

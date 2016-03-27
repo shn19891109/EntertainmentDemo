@@ -32,3 +32,10 @@ UIKIT_EXTERN CGFloat const SHNTopicCellBottomBarH;
 UIKIT_EXTERN CGFloat const SHNTopicCellPictureMaxH;
 /** 精华-cell-图片帖子一旦超过最大高度,就是用Break */
 UIKIT_EXTERN CGFloat const SHNTopicCellPictureBreakH;
+
+/** SHNUser模型-性别属性值 */
+UIKIT_EXTERN NSString * const SHNUserSexMale;
+UIKIT_EXTERN NSString * const SHNUserSexFemale;
+
+/** 精华-cell-最热评论标题的高度 */
+UIKIT_EXTERN CGFloat const SHNTopicCellTopCmtTitleH;

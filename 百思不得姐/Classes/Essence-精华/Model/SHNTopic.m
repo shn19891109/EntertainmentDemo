@@ -10,7 +10,7 @@
 #import <MJExtension.h>
 
 #import "SHNComment.h"
-
+#import "SHNUser.h"
 @implementation SHNTopic
 {
     CGFloat _cellHeight;
@@ -105,6 +105,14 @@
             _videoF = CGRectMake(videoX, videoY, videoW, videoH);
             
             _cellHeight += videoH + SHNTopicCellMargin;
+
+        }
+        // 如果有最热评论
+        SHNComment *cmt = [self.top_cmt firstObject];
+        if (cmt) {
+            NSString *content = [NSString stringWithFormat:@"%@ : %@", cmt.user.username, cmt.content];
+            CGFloat contentH = [content boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:13]} context:nil].size.height;
+            _cellHeight += SHNTopicCellTopCmtTitleH + contentH + SHNTopicCellMargin;
 
         }
         //底部工具条的高度

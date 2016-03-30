@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SHNNewViewController : UIViewController
+#import "SHNEssenceViewController.h"
+
+@interface SHNNewViewController : SHNEssenceViewController
 
 @end

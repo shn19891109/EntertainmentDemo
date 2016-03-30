@@ -14,7 +14,7 @@
 #import "SHNTopicCell.h"
 #import <MJExtension.h>
 #import "SHNCommentViewController.h"
-
+#import "SHNNewViewController.h"
 @interface SHNTopicViewController ()
 /** 帖子数据 */
 @property (nonatomic, strong) NSMutableArray *topics;
@@ -95,6 +95,12 @@ static NSString * const SHNTopicCellId = @"topic";
     
     self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopics)];
 }
+
+#pragma mark --参数处理
+- (NSString *)a{
+    return [self.parentViewController isKindOfClass:[SHNNewViewController class]] ? @"newlist" : @"list";
+}
+
 #pragma mark - 数据处理
 /**
  * 加载新的帖子数据
@@ -104,7 +110,7 @@ static NSString * const SHNTopicCellId = @"topic";
     [self.tableView.mj_footer endRefreshing];
     // 参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
-    params[@"a"] = @"list";
+    params[@"a"] = self.a;
     params[@"c"] = @"data";
     params[@"type"] = self.type;
     self.params = params;

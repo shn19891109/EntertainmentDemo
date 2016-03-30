@@ -8,7 +8,7 @@
 
 #import "SHNRecommendUserCell.h"
 #import <UIImageView+WebCache.h>
-
+#import "UIImageView+SHNExtension.h"
 #import "SHNRecommendUser.h"
 
 @interface SHNRecommendUserCell ()
@@ -36,7 +36,8 @@
         fansCount = [NSString stringWithFormat:@"%.1f万人关注", user.fans_count / 10000.0];
     }
     self.fansCountLabel.text = fansCount;
-    [self.headerImageView sd_setImageWithURL:[NSURL URLWithString:user.header] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+//    [self.headerImageView sd_setImageWithURL:[NSURL URLWithString:user.header] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    [self.headerImageView setHeader:user.header];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

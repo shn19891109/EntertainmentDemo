@@ -12,7 +12,7 @@
 #import "SHNTopicVoiceView.h"
 #import "SHNTopicVideoView.h"
 #import <UIImageView+WebCache.h>
-
+#import "UIImageView+SHNExtension.h"
 #import "SHNComment.h"
 #import "SHNUser.h"
 
@@ -112,7 +112,7 @@
     self.sinaView.hidden = !topic.isSina_v;
     
     //设置头像
-    [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    [self.profileImageView setHeader:topic.profile_image];
     //设置名字
     self.nameLabel.text = topic.name;
     //设置帖子的创建时间

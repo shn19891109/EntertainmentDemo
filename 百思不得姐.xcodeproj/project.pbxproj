@@ -69,6 +69,8 @@
 		1ED4C6B61C7DFBCB009417C9 /* SHNTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6A91C7DFBCB009417C9 /* SHNTabViewController.m */; };
 		1ED4C6B71C7DFBCB009417C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6AA1C7DFBCB009417C9 /* main.m */; };
 		1ED4C6B81C7DFBCB009417C9 /* SHNTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4C6AE1C7DFBCB009417C9 /* SHNTabBar.m */; };
+		1EE2DA981CABA1180012CA9D /* UIImage+SHNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE2DA971CABA1180012CA9D /* UIImage+SHNExtension.m */; };
+		1EE2DA9B1CABA68E0012CA9D /* UIImageView+SHNExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE2DA9A1CABA68E0012CA9D /* UIImageView+SHNExtension.m */; };
 		1EEB52091C7C8B2800953ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEB52081C7C8B2800953ECC /* Assets.xcassets */; };
 		1EEB52171C7C8B2800953ECC /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB52161C7C8B2800953ECC /* _____Tests.m */; };
 /* End PBXBuildFile section */
@@ -190,6 +192,10 @@
 		1ED4C6AB1C7DFBCB009417C9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		1ED4C6AD1C7DFBCB009417C9 /* SHNTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNTabBar.h; sourceTree = "<group>"; };
 		1ED4C6AE1C7DFBCB009417C9 /* SHNTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNTabBar.m; sourceTree = "<group>"; };
+		1EE2DA961CABA1180012CA9D /* UIImage+SHNExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SHNExtension.h"; sourceTree = "<group>"; };
+		1EE2DA971CABA1180012CA9D /* UIImage+SHNExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SHNExtension.m"; sourceTree = "<group>"; };
+		1EE2DA991CABA68E0012CA9D /* UIImageView+SHNExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SHNExtension.h"; sourceTree = "<group>"; };
+		1EE2DA9A1CABA68E0012CA9D /* UIImageView+SHNExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SHNExtension.m"; sourceTree = "<group>"; };
 		1EEB51F91C7C8B2800953ECC /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EEB52081C7C8B2800953ECC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EEB520D1C7C8B2800953ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -461,6 +467,10 @@
 				1ED4C6A61C7DFBCB009417C9 /* UIView+SHNExtension.m */,
 				1E21398A1C8C3ECF00D94018 /* NSDate+Extension.h */,
 				1E21398B1C8C3ECF00D94018 /* NSDate+Extension.m */,
+				1EE2DA961CABA1180012CA9D /* UIImage+SHNExtension.h */,
+				1EE2DA971CABA1180012CA9D /* UIImage+SHNExtension.m */,
+				1EE2DA991CABA68E0012CA9D /* UIImageView+SHNExtension.h */,
+				1EE2DA9A1CABA68E0012CA9D /* UIImageView+SHNExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -708,8 +718,10 @@
 			files = (
 				1ED4C6B71C7DFBCB009417C9 /* main.m in Sources */,
 				1EB28DDF1C9835870056B0E1 /* SHNTopicVoiceView.m in Sources */,
+				1EE2DA9B1CABA68E0012CA9D /* UIImageView+SHNExtension.m in Sources */,
 				1ED4C6B81C7DFBCB009417C9 /* SHNTabBar.m in Sources */,
 				1E21398C1C8C3ECF00D94018 /* NSDate+Extension.m in Sources */,
+				1EE2DA981CABA1180012CA9D /* UIImage+SHNExtension.m in Sources */,
 				1EAD823E1C85CFE7008E5DCB /* SHNRecommendTag.m in Sources */,
 				1EBEBF831C887DF200778692 /* SHNTextField.m in Sources */,
 				1E2139751C8AE5B300D94018 /* SHNVideoViewController.m in Sources */,

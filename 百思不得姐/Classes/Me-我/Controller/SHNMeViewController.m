@@ -7,29 +7,57 @@
 //
 
 #import "SHNMeViewController.h"
+#import "SHNMeViewCell.h"
+#import "SHNMeFooterView.h"
 
-@interface SHNMeViewController ()
+@interface SHNMeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
 
 @implementation SHNMeViewController
 
+static NSString *SHNMeId = @"me";
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setupNav];
+    
+    [self setupTableView];
+ 
+    
+}
+- (void)setupNav
+{
     // 设置导航栏标题
     self.navigationItem.title = @"我的";
-    
-    // self.title = @"" 这种设置标题等价于 self.navigationItem.title = @""和self.tabBarItem.title = @"";
-
-    
     
     // 设置导航栏右边的按钮
     UIBarButtonItem *settingItem = [UIBarButtonItem itemWithImage:@"mine-setting-icon" highImage:@"mine-setting-icon-click" target:self action:@selector(settingClick)];
     UIBarButtonItem *moonItem = [UIBarButtonItem itemWithImage:@"mine-moon-icon" highImage:@"mine-moon-icon-click" target:self action:@selector(moonClick)];
     self.navigationItem.rightBarButtonItems = @[settingItem, moonItem];
-    //设置背景色
-    self.view.backgroundColor = SHNGlobalBg;
 }
+- (void)setupTableView
+{
+    // 设置背景色
+    self.tableView.backgroundColor = SHNGlobalBg;
+    
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [self.tableView registerClass:[SHNMeViewCell class] forCellReuseIdentifier:SHNMeId];
+    
+    // 调整header和footer
+    self.tableView.sectionHeaderHeight = 0;
+    self.tableView.sectionFooterHeight = SHNTopicCellMargin;
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    // 调整inset
+    self.tableView.contentInset = UIEdgeInsetsMake(SHNTopicCellMargin - 35, 0, 0, 0);
+    
+    // 设置footerView
+    self.tableView.tableFooterView = [[SHNMeFooterView alloc] init];
+    NSLog(@"tableFooterView====%@",NSStringFromCGRect(self.tableView.tableFooterView.frame));
+
+}
+
 - (void)settingClick
 {
     SHNLogFunc;
@@ -40,19 +68,25 @@
     SHNLogFunc;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark ---数据源方法
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    SHNMeViewCell *cell = [tableView dequeueReusableCellWithIdentifier:SHNMeId];
+    
+    if (indexPath.section == 0) {
+        cell.imageView.image = [UIImage imageNamed:@"mine_icon_nearby"];
+        cell.textLabel.text = @"登录/注册";
+    } else if (indexPath.section == 1) {
+        cell.textLabel.text = @"离线下载";
+    }
+    
+    return cell;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

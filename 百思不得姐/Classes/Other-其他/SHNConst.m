@@ -31,3 +31,6 @@ NSString * const SHNUserSexFemale = @"f";
 
 /** 精华-cell-最热评论标题的高度 */
 CGFloat const SHNTopicCellTopCmtTitleH = 20;
+
+/**tabar被点击的通知名字*/
+NSString * const SHNTabBarDidSelectedNotification = @"SHNTabBarDidSelectedNotification";

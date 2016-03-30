@@ -39,3 +39,6 @@ UIKIT_EXTERN NSString * const SHNUserSexFemale;
 
 /** 精华-cell-最热评论标题的高度 */
 UIKIT_EXTERN CGFloat const SHNTopicCellTopCmtTitleH;
+
+/**tabar被点击的通知名字*/
+UIKIT_EXTERN NSString * const SHNTabBarDidSelectedNotification;

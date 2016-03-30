@@ -8,6 +8,7 @@
 
 #import "SHNCommentViewController.h"
 #import "SHNTopicCell.h"
+#import "SHNCommentCell.h"
 #import "SHNTopic.h"
 #import "SHNCommentHeaderView.h"
 
@@ -15,6 +16,9 @@
 #import <MJRefresh.h>
 #import <AFNetworking.h>
 #import <MJExtension.h>
+
+static NSString * const SHNCommentId = @"comment";
+
 @interface SHNCommentViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *bottomSapce;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -24,11 +28,21 @@
 @property (nonatomic, strong) NSMutableArray *latestComments;
 /** 保存帖子的top_cmt */
 @property (nonatomic, strong) SHNComment *saved_top_cmt;
+/** 保存当前的页码 */
+@property (nonatomic, assign) NSInteger page;
+/** 管理者 */
+@property (nonatomic, strong) AFHTTPSessionManager *manager;
 
 @end
 
 @implementation SHNCommentViewController
-
+- (AFHTTPSessionManager *)manager
+{
+    if (!_manager) {
+        _manager = [AFHTTPSessionManager manager];
+    }
+    return _manager;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -46,6 +60,19 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
     
     self.tableView.backgroundColor = SHNGlobalBg;
+    
+    // cell的高度设置（只有设置这两行才能自动计算高度）(ios8之后才可以用这种方法)
+    
+    self.tableView.estimatedRowHeight = 44;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+
+    // 注册
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([SHNCommentCell class]) bundle:nil] forCellReuseIdentifier:SHNCommentId];
+    // 去掉分割线
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    // 内边距
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, SHNTopicCellMargin, 0);
+
 }
 
 - (void)setupHeader {
@@ -69,15 +96,23 @@
     
     // 设置header
     self.tableView.tableHeaderView = header;
+ 
 
 }
 - (void)setupRefresh
 {
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewComments)];
     [self.tableView.mj_header beginRefreshing];
+    
+    self.tableView.mj_footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreComments)];
+    self.tableView.mj_footer.hidden = YES;
 }
 
 - (void)loadNewComments {
+    
+    //结束之前的所有请求(这种方式取消任务后，还可以开启其他任务)
+    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
+    
     //参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"dataList";
@@ -85,7 +120,7 @@
     params[@"data_id"] = self.topic.ID;
     params[@"hot"] = @"1";
     
-    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+    [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
         // 最热评论
         self.hotComments = [SHNComment mj_objectArrayWithKeyValuesArray:responseObject[@"hot"]];
         
@@ -94,11 +129,54 @@
         
         [self.tableView reloadData];
         [self.tableView.mj_header endRefreshing];
+        
+        //控制footer的状态
+        NSInteger total = [responseObject[@"total"]integerValue];
+        if (self.latestComments.count >= total) {  // 全部加载完毕
+            self.tableView.mj_footer.hidden = YES;
+        }
+        
     } failure:^(NSURLSessionDataTask *task, NSError *error) {
         [self.tableView.mj_header endRefreshing];
     }];
+}
 
+- (void)loadMoreComments {
+    // 结束之前的所有请求
+    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
+    // 页码
+    NSInteger page = self.page + 1;
+    // 参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"a"] = @"dataList";
+    params[@"c"] = @"comment";
+    params[@"data_id"] = self.topic.ID;
+    params[@"page"] = @(page);
+    SHNComment *cmt = [self.latestComments lastObject];
+    params[@"lastcid"] = cmt.ID;
+    [self.manager GET:@"http://api.budejie.com/api/api_open.php" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        // 最新评论
+        NSArray *newComments = [SHNComment mj_objectArrayWithKeyValuesArray:responseObject[@"data"]];
+        [self.latestComments addObjectsFromArray:newComments];
+        // 页码
+        self.page = page;
+        // 刷新数据
+        [self.tableView reloadData];
+        // 控制footer的状态
+        NSInteger total = [responseObject[@"total"] integerValue];
+        if (self.latestComments.count >= total) { // 全部加载完毕
+            self.tableView.mj_footer.hidden = YES;
+        } else {
+            // 结束刷新状态
+            [self.tableView.mj_footer endRefreshing];
+        }
 
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+        [self.tableView.mj_footer endRefreshing];
+    }];
 }
 
 - (void)keyboardWillChangeFrame:(NSNotification *)note {
@@ -120,7 +198,10 @@
         self.topic.top_cmt = self.saved_top_cmt;
         [self.topic setValue:@0 forKeyPath:@"cellHeight"];
     }
-    
+    // 取消所有任务
+    //    [self.manager.tasks makeObjectsPerformSelector:@selector(cancel)];
+    [self.manager invalidateSessionCancelingTasks:YES];
+
 }
 
 #pragma mark --UITableViewDataSource--
@@ -140,6 +221,10 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSInteger hotCount = self.hotComments.count;
     NSInteger latestCount = self.latestComments.count;
+    
+    // 隐藏尾部控件
+    tableView.mj_footer.hidden = (latestCount == 0);
+
     if (section == 0) {
         return hotCount ? hotCount : latestCount;
     }
@@ -226,12 +311,9 @@
     return header;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    }
-    SHNComment *comment = [self commentInIndexPath:indexPath];
-    cell.textLabel.text = comment.content;
+    SHNCommentCell *cell = [tableView dequeueReusableCellWithIdentifier:SHNCommentId];
+    
+    cell.comment = [self commentInIndexPath:indexPath];
 
     return cell;
     
@@ -240,6 +322,47 @@
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
 {
     [self.view endEditing:YES];
+    [[UIMenuController sharedMenuController] setMenuVisible:NO animated:YES];
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIMenuController *menu = [UIMenuController sharedMenuController];  //共享的如何要在其他地方用的话，要清空item数组
+    if (menu.isMenuVisible) {
+        [menu setMenuVisible:NO animated:YES];
+    } else {
+        // 被点击的cell
+        SHNCommentCell *cell = (SHNCommentCell *)[tableView cellForRowAtIndexPath:indexPath];
+        // 出现一个第一响应者
+        [cell becomeFirstResponder];
+        
+        // 显示MenuController
+        UIMenuItem *ding = [[UIMenuItem alloc] initWithTitle:@"顶" action:@selector(ding:)];
+        UIMenuItem *replay = [[UIMenuItem alloc] initWithTitle:@"回复" action:@selector(replay:)];
+        UIMenuItem *report = [[UIMenuItem alloc] initWithTitle:@"举报" action:@selector(report:)];
+        menu.menuItems = @[ding, replay, report];
+        CGRect rect = CGRectMake(0, cell.height * 0.5, cell.width, cell.height * 0.5);
+        [menu setTargetRect:rect inView:cell];
+        [menu setMenuVisible:YES animated:YES];
+    }
+}
+
+#pragma mark - MenuItem处理
+- (void)ding:(UIMenuController *)menu
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    NSLog(@"%s %@", __func__, [self commentInIndexPath:indexPath].content);
+}
+
+- (void)replay:(UIMenuController *)menu
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    NSLog(@"%s %@", __func__, [self commentInIndexPath:indexPath].content);
+}
+
+- (void)report:(UIMenuController *)menu
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    NSLog(@"%s %@", __func__, [self commentInIndexPath:indexPath].content);
 }
 
 /**

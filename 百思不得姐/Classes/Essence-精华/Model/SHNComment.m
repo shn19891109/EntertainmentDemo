@@ -7,7 +7,11 @@
 //
 
 #import "SHNComment.h"
+#import <MJExtension.h>
 
 @implementation SHNComment
-
++ (NSDictionary *)replacedKeyFromPropertyName
+{
+    return @{@"ID" : @"id"};
+}
 @end

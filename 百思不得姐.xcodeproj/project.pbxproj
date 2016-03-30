@@ -35,6 +35,9 @@
 		1E5B825B1CA79CAA00F196DB /* SHNCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B82591CA79CAA00F196DB /* SHNCommentViewController.m */; };
 		1E5B825C1CA79CAA00F196DB /* SHNCommentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B825A1CA79CAA00F196DB /* SHNCommentViewController.xib */; };
 		1E5B825F1CA80A3100F196DB /* SHNCommentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B825E1CA80A3100F196DB /* SHNCommentHeaderView.m */; };
+		1E5B828D1CA9563500F196DB /* SHNCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B828C1CA9563500F196DB /* SHNCommentCell.m */; };
+		1E5B828F1CA9564500F196DB /* SHNCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B828E1CA9564500F196DB /* SHNCommentCell.xib */; };
+		1E5B82921CA96E0A00F196DB /* SHNWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B82911CA96E0A00F196DB /* SHNWindow.m */; };
 		1E8E6C511C90491D00AC6D79 /* SHNShowPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E6C4F1C90491D00AC6D79 /* SHNShowPictureViewController.m */; };
 		1E8E6C521C90491D00AC6D79 /* SHNShowPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E6C501C90491D00AC6D79 /* SHNShowPictureViewController.xib */; };
 		1E9AF5BA1C8F0E960035365C /* SHNTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AF5B91C8F0E960035365C /* SHNTopicPictureView.m */; };
@@ -127,6 +130,11 @@
 		1E5B825A1CA79CAA00F196DB /* SHNCommentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNCommentViewController.xib; sourceTree = "<group>"; };
 		1E5B825D1CA80A3100F196DB /* SHNCommentHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNCommentHeaderView.h; sourceTree = "<group>"; };
 		1E5B825E1CA80A3100F196DB /* SHNCommentHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNCommentHeaderView.m; sourceTree = "<group>"; };
+		1E5B828B1CA9563500F196DB /* SHNCommentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNCommentCell.h; sourceTree = "<group>"; };
+		1E5B828C1CA9563500F196DB /* SHNCommentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNCommentCell.m; sourceTree = "<group>"; };
+		1E5B828E1CA9564500F196DB /* SHNCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNCommentCell.xib; sourceTree = "<group>"; };
+		1E5B82901CA96E0A00F196DB /* SHNWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNWindow.h; sourceTree = "<group>"; };
+		1E5B82911CA96E0A00F196DB /* SHNWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNWindow.m; sourceTree = "<group>"; };
 		1E8E6C4E1C90491D00AC6D79 /* SHNShowPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNShowPictureViewController.h; sourceTree = "<group>"; };
 		1E8E6C4F1C90491D00AC6D79 /* SHNShowPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNShowPictureViewController.m; sourceTree = "<group>"; };
 		1E8E6C501C90491D00AC6D79 /* SHNShowPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNShowPictureViewController.xib; sourceTree = "<group>"; };
@@ -249,6 +257,9 @@
 				1E9AF5BE1C8F120A0035365C /* SHNProgressView.m */,
 				1E5B825D1CA80A3100F196DB /* SHNCommentHeaderView.h */,
 				1E5B825E1CA80A3100F196DB /* SHNCommentHeaderView.m */,
+				1E5B828B1CA9563500F196DB /* SHNCommentCell.h */,
+				1E5B828C1CA9563500F196DB /* SHNCommentCell.m */,
+				1E5B828E1CA9564500F196DB /* SHNCommentCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -476,6 +487,8 @@
 				1E21396B1C8A701E00D94018 /* SHNPushGuideView.h */,
 				1E21396C1C8A701E00D94018 /* SHNPushGuideView.m */,
 				1E21396E1C8A703000D94018 /* SHNPushGuideView.xib */,
+				1E5B82901CA96E0A00F196DB /* SHNWindow.h */,
+				1E5B82911CA96E0A00F196DB /* SHNWindow.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -642,6 +655,7 @@
 				1EB1B6561C91A0F800B9520B /* SHNPublishView.xib in Resources */,
 				1E5B825C1CA79CAA00F196DB /* SHNCommentViewController.xib in Resources */,
 				1E9AF5BC1C8F0EA40035365C /* SHNTopicPictureView.xib in Resources */,
+				1E5B828F1CA9564500F196DB /* SHNCommentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -721,9 +735,11 @@
 				1EAD82351C85C204008E5DCB /* SHNRecommendUserCell.m in Sources */,
 				1E5B82551CA773B000F196DB /* SHNTopicVideoView.m in Sources */,
 				1EBEBF7D1C8876B800778692 /* SHNVerticalButton.m in Sources */,
+				1E5B828D1CA9563500F196DB /* SHNCommentCell.m in Sources */,
 				1E21397E1C8AE61200D94018 /* SHNWordViewController.m in Sources */,
 				1E2139781C8AE5D600D94018 /* SHNVoiceViewController.m in Sources */,
 				1E2139721C8AE57200D94018 /* SHNAllViewController.m in Sources */,
+				1E5B82921CA96E0A00F196DB /* SHNWindow.m in Sources */,
 				1E21397B1C8AE5F700D94018 /* SHNPictureViewController.m in Sources */,
 				1EAD82391C85CECD008E5DCB /* SHNRecomendTagsController.m in Sources */,
 				1ED4C6B61C7DFBCB009417C9 /* SHNTabViewController.m in Sources */,

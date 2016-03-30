@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "SHNTabViewController.h"
+#import "SHNWindow.h"
 
 #import "SHNPushGuideView.h"
 
@@ -31,6 +32,9 @@
     [self.window makeKeyAndVisible];
     // 显示推送引导
     [SHNPushGuideView showView];
+    
+    //添加一个window，点击这个window，可以让屏幕上的scrollview回滚到顶部
+    
     return YES;
 }
 
@@ -50,6 +54,9 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    // 添加一个window, 点击这个window, 可以让屏幕上的scrollView滚到最顶部
+    [SHNWindow  show];
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {

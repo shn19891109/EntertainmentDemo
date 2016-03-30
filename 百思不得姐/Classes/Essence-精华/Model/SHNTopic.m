@@ -56,6 +56,7 @@
              @"middle_image" : @"image2",
              @"ID" : @"id",
              @"top_cmt" : @"top_cmt[0]"    //直接映射为模型
+             // @"qzone_uid" : @"top_cmt[0].user.qzone_uid"  //把user中的qzone_uid属性映射为模型的qzone_uid
              };
 }
 //+ (NSDictionary *)mj_objectClassInArray {

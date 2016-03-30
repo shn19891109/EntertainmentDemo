@@ -174,8 +174,8 @@
 //处理cell分割线的方法
 - (void)setFrame:(CGRect)frame {
     
-    frame.origin.x = SHNTopicCellMargin;
-    frame.size.width -= 2*SHNTopicCellMargin;
+//    frame.origin.x = SHNTopicCellMargin;
+//    frame.size.width -= 2*SHNTopicCellMargin;
 //    frame.size.height -= margin;
     frame.size.height = self.topic.cellHeight - SHNTopicCellMargin;
 

@@ -41,13 +41,12 @@
 #pragma mark ----内部改变cell的位置与大小--
 - (void)setFrame:(CGRect)frame
 {
-    frame.origin.x = 5;
-    frame.size.width -= 2 * frame.origin.x;
+//    frame.origin.x = 5;
+//    frame.size.width -= 2 * frame.origin.x;
     frame.size.height -= 1;
     
     [super setFrame:frame];
 }
-
 
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

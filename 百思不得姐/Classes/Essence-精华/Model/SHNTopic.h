@@ -56,6 +56,10 @@
 /** 最热评论 */
 @property (nonatomic, strong) SHNComment *top_cmt;
 
+/** qzone_uid *(映射)/
+//@property (nonatomic, copy) NSString *qzone_uid;
+
+
 /****** 额外的辅助属性 ******/
 /** cell的高度 (readonly 描述只会生成getter方法)*/
 @property (nonatomic, assign, readonly) CGFloat cellHeight;

@@ -64,6 +64,12 @@
     self.placeholderLabel.size = [self.placeholder boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.font} context:nil].size;
 }
 
+//- (void)layoutSubviews {
+//    [super layoutSubviews];
+//    
+//    self.placeholderLabel.width = self.width - 2*self.placeholderLabel.x;
+//    [self.placeholderLabel sizeToFit];
+//}
 #pragma mark --重写setter
 - (void)setPlaceholderColor:(UIColor *)placeholderColor {
     _placeholderColor = placeholderColor;
@@ -76,6 +82,7 @@
     self.placeholderLabel.text = placeholder;
     
     [self updatePlaceholderLabelSize];
+//    [self setNeedsLayout];
 }
 - (void)setFont:(UIFont *)font
 {
@@ -84,6 +91,8 @@
     self.placeholderLabel.font = font;
     
     [self updatePlaceholderLabelSize];
+//    [self setNeedsLayout];
+
 }
 - (void)setText:(NSString *)text
 {
@@ -98,5 +107,11 @@
     
     [self textDidChange];
 }
+
+/**
+ *  setNeedsLayout方法：会在恰当的时候调用layoutSubviews
+  setNeedsDisplay方法：会在恰当的时候调用drawRect
+
+ */
 
 @end

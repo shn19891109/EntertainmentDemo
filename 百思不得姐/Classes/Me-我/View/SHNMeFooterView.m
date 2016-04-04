@@ -85,6 +85,10 @@
     
     // 计算footer的高度
     self.height = rows * buttonH;
+    // 重新设置footerView
+    UITableView *tableView = (UITableView *)self.superview;
+    //    tableView.tableFooterView = self;
+    tableView.contentSize = CGSizeMake(0, CGRectGetMaxY(self.frame));
 
 //    // 重绘
     [self setNeedsDisplay];

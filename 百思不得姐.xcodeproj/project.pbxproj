@@ -77,6 +77,10 @@
 		1EE2DAB81CABCBA40012CA9D /* SHNSqaureButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE2DAB71CABCBA40012CA9D /* SHNSqaureButton.m */; };
 		1EE2DABB1CABD2E70012CA9D /* SHNWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE2DABA1CABD2E70012CA9D /* SHNWebViewController.m */; };
 		1EE2DABD1CABD4230012CA9D /* SHNWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EE2DABC1CABD4230012CA9D /* SHNWebViewController.xib */; };
+		1EE2DAC31CABF5E40012CA9D /* XMGPublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE2DAC11CABF5E40012CA9D /* XMGPublishViewController.m */; };
+		1EE2DAC41CABF5E40012CA9D /* XMGPublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EE2DAC21CABF5E40012CA9D /* XMGPublishViewController.xib */; };
+		1EE2DAC71CABF7290012CA9D /* SHNPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE2DAC61CABF7290012CA9D /* SHNPostViewController.m */; };
+		1EE2DACB1CABFE090012CA9D /* SHNPlaceHolderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EE2DACA1CABFE090012CA9D /* SHNPlaceHolderTextView.m */; };
 		1EEB52091C7C8B2800953ECC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEB52081C7C8B2800953ECC /* Assets.xcassets */; };
 		1EEB52171C7C8B2800953ECC /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EEB52161C7C8B2800953ECC /* _____Tests.m */; };
 /* End PBXBuildFile section */
@@ -213,6 +217,13 @@
 		1EE2DAB91CABD2E70012CA9D /* SHNWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNWebViewController.h; sourceTree = "<group>"; };
 		1EE2DABA1CABD2E70012CA9D /* SHNWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNWebViewController.m; sourceTree = "<group>"; };
 		1EE2DABC1CABD4230012CA9D /* SHNWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNWebViewController.xib; sourceTree = "<group>"; };
+		1EE2DAC01CABF5E40012CA9D /* XMGPublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGPublishViewController.h; sourceTree = "<group>"; };
+		1EE2DAC11CABF5E40012CA9D /* XMGPublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGPublishViewController.m; sourceTree = "<group>"; };
+		1EE2DAC21CABF5E40012CA9D /* XMGPublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGPublishViewController.xib; sourceTree = "<group>"; };
+		1EE2DAC51CABF7290012CA9D /* SHNPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNPostViewController.h; sourceTree = "<group>"; };
+		1EE2DAC61CABF7290012CA9D /* SHNPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNPostViewController.m; sourceTree = "<group>"; };
+		1EE2DAC91CABFE090012CA9D /* SHNPlaceHolderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNPlaceHolderTextView.h; sourceTree = "<group>"; };
+		1EE2DACA1CABFE090012CA9D /* SHNPlaceHolderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNPlaceHolderTextView.m; sourceTree = "<group>"; };
 		1EEB51F91C7C8B2800953ECC /* 百思不得姐.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "百思不得姐.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EEB52081C7C8B2800953ECC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EEB520D1C7C8B2800953ECC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -290,6 +301,7 @@
 		1ED4C6881C7DFBCB009417C9 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				1EE2DABE1CABF5CD0012CA9D /* Publish-发布 */,
 				1ED4C6891C7DFBCB009417C9 /* Essence-精华 */,
 				1ED4C68D1C7DFBCB009417C9 /* FriendTrends-关注 */,
 				1ED4C6931C7DFBCB009417C9 /* Me-我 */,
@@ -531,6 +543,36 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		1EE2DABE1CABF5CD0012CA9D /* Publish-发布 */ = {
+			isa = PBXGroup;
+			children = (
+				1EE2DAC81CABFDE80012CA9D /* View */,
+				1EE2DABF1CABF5DA0012CA9D /* Controller */,
+			);
+			path = "Publish-发布";
+			sourceTree = "<group>";
+		};
+		1EE2DABF1CABF5DA0012CA9D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1EE2DAC01CABF5E40012CA9D /* XMGPublishViewController.h */,
+				1EE2DAC11CABF5E40012CA9D /* XMGPublishViewController.m */,
+				1EE2DAC21CABF5E40012CA9D /* XMGPublishViewController.xib */,
+				1EE2DAC51CABF7290012CA9D /* SHNPostViewController.h */,
+				1EE2DAC61CABF7290012CA9D /* SHNPostViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		1EE2DAC81CABFDE80012CA9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1EE2DAC91CABFE090012CA9D /* SHNPlaceHolderTextView.h */,
+				1EE2DACA1CABFE090012CA9D /* SHNPlaceHolderTextView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1EEB51F01C7C8B2800953ECC = {
 			isa = PBXGroup;
 			children = (
@@ -681,6 +723,7 @@
 				1EBEBF7A1C88760600778692 /* SHNLoginRegisterViewController.xib in Resources */,
 				1E4B72541C82F23D0009C81F /* SHNRecomendCategoryCell.xib in Resources */,
 				1EBE6ABC1C7F376300E3FDB4 /* SHNFriendTrendsViewController.xib in Resources */,
+				1EE2DAC41CABF5E40012CA9D /* XMGPublishViewController.xib in Resources */,
 				1EAD82361C85C204008E5DCB /* SHNRecommendUserCell.xib in Resources */,
 				1E5B82571CA773C000F196DB /* SHNTopicVideoView.xib in Resources */,
 				1EE2DABD1CABD4230012CA9D /* SHNWebViewController.xib in Resources */,
@@ -745,6 +788,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EE2DAC71CABF7290012CA9D /* SHNPostViewController.m in Sources */,
 				1ED4C6B71C7DFBCB009417C9 /* main.m in Sources */,
 				1EB28DDF1C9835870056B0E1 /* SHNTopicVoiceView.m in Sources */,
 				1EE2DA9B1CABA68E0012CA9D /* UIImageView+SHNExtension.m in Sources */,
@@ -754,10 +798,12 @@
 				1EAD823E1C85CFE7008E5DCB /* SHNRecommendTag.m in Sources */,
 				1EBEBF831C887DF200778692 /* SHNTextField.m in Sources */,
 				1E2139751C8AE5B300D94018 /* SHNVideoViewController.m in Sources */,
+				1EE2DAC31CABF5E40012CA9D /* XMGPublishViewController.m in Sources */,
 				1EE2DAAF1CABCB1C0012CA9D /* SHNMeFooterView.m in Sources */,
 				1EBE6ABA1C7F2B2100E3FDB4 /* SHNNavigationController.m in Sources */,
 				1E4B724B1C82E1850009C81F /* SHNRecomendViewController.m in Sources */,
 				1ED4C6B41C7DFBCB009417C9 /* UIBarButtonItem+SHNExtension.m in Sources */,
+				1EE2DACB1CABFE090012CA9D /* SHNPlaceHolderTextView.m in Sources */,
 				1E4B724F1C82F1C30009C81F /* SHNRecomendCatogory.m in Sources */,
 				1E2139811C8BAFF100D94018 /* SHNTopic.m in Sources */,
 				1EE2DAAC1CABCAA20012CA9D /* SHNMeViewCell.m in Sources */,

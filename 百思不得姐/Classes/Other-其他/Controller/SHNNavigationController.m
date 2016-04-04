@@ -23,6 +23,20 @@
     //这样设置以后所有的 UINavigationBar 都会设置背景图片
     UINavigationBar *bar = [UINavigationBar appearance];
     [bar setBackgroundImage:[UIImage imageNamed:@"navigationbarBackgroundWhite"] forBarMetrics:UIBarMetricsDefault];
+    [bar setTitleTextAttributes:@{NSFontAttributeName : [UIFont boldSystemFontOfSize:20]}];
+    
+    //设置item
+    UIBarButtonItem *item = [UIBarButtonItem appearance];
+    //UIControlStateNormal
+    NSMutableDictionary *itemAttrs = [NSMutableDictionary dictionary];
+    itemAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+    itemAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:17];
+    [item setTitleTextAttributes:itemAttrs forState:UIControlStateNormal];
+    //UIControlStateDisabled
+    NSMutableDictionary *itemDisabledAttrs = [NSMutableDictionary dictionary];
+    itemDisabledAttrs[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
+    [item setTitleTextAttributes:itemDisabledAttrs forState:UIControlStateDisabled];
+
 
 }
 - (void)viewDidLoad {

@@ -8,7 +8,7 @@
 
 #import "SHNTabBar.h"
 #import "SHNPublishView.h"
-
+#import "XMGPublishViewController.h"
 @interface SHNTabBar ()
 /** 发布按钮 */
 @property (nonatomic, weak) UIButton *publishButton;
@@ -58,7 +58,10 @@
 //    UIWindow *window = [UIApplication sharedApplication].keyWindow;
 //    publish.frame = window.bounds;
 //    [window addSubview:publish];
-    [SHNPublishView show];
+//    [SHNPublishView show];
+    
+    XMGPublishViewController *publish = [[XMGPublishViewController alloc] init];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publish animated:NO completion:nil];
 }
 
 - (void)layoutSubviews {

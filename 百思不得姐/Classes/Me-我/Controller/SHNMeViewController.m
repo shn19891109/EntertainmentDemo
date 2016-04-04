@@ -54,7 +54,6 @@ static NSString *SHNMeId = @"me";
     
     // 设置footerView
     self.tableView.tableFooterView = [[SHNMeFooterView alloc] init];
-    NSLog(@"tableFooterView====%@",NSStringFromCGRect(self.tableView.tableFooterView.frame));
 
 }
 

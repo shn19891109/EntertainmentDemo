@@ -42,3 +42,7 @@ UIKIT_EXTERN CGFloat const SHNTopicCellTopCmtTitleH;
 
 /**tabar被点击的通知名字*/
 UIKIT_EXTERN NSString * const SHNTabBarDidSelectedNotification;
+
+/** 标签-间距 */
+UIKIT_EXTERN CGFloat const SHNTopicTagMargin;
+

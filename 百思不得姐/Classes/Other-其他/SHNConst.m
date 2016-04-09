@@ -34,3 +34,6 @@ CGFloat const SHNTopicCellTopCmtTitleH = 20;
 
 /**tabar被点击的通知名字*/
 NSString * const SHNTabBarDidSelectedNotification = @"SHNTabBarDidSelectedNotification";
+
+/** 标签-间距 */
+CGFloat const SHNTopicTagMargin = 5;

@@ -38,6 +38,8 @@
 		1E5B828D1CA9563500F196DB /* SHNCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B828C1CA9563500F196DB /* SHNCommentCell.m */; };
 		1E5B828F1CA9564500F196DB /* SHNCommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E5B828E1CA9564500F196DB /* SHNCommentCell.xib */; };
 		1E5B82921CA96E0A00F196DB /* SHNWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B82911CA96E0A00F196DB /* SHNWindow.m */; };
+		1E75847F1CB8DEDF000947EA /* SHNAddTagToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E75847E1CB8DEDF000947EA /* SHNAddTagToolBar.m */; };
+		1E7584811CB8DEF4000947EA /* SHNAddTagToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E7584801CB8DEF4000947EA /* SHNAddTagToolBar.xib */; };
 		1E8E6C511C90491D00AC6D79 /* SHNShowPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E6C4F1C90491D00AC6D79 /* SHNShowPictureViewController.m */; };
 		1E8E6C521C90491D00AC6D79 /* SHNShowPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E6C501C90491D00AC6D79 /* SHNShowPictureViewController.xib */; };
 		1E9AF5BA1C8F0E960035365C /* SHNTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AF5B91C8F0E960035365C /* SHNTopicPictureView.m */; };
@@ -147,6 +149,9 @@
 		1E5B828E1CA9564500F196DB /* SHNCommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNCommentCell.xib; sourceTree = "<group>"; };
 		1E5B82901CA96E0A00F196DB /* SHNWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNWindow.h; sourceTree = "<group>"; };
 		1E5B82911CA96E0A00F196DB /* SHNWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNWindow.m; sourceTree = "<group>"; };
+		1E75847D1CB8DEDF000947EA /* SHNAddTagToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNAddTagToolBar.h; sourceTree = "<group>"; };
+		1E75847E1CB8DEDF000947EA /* SHNAddTagToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNAddTagToolBar.m; sourceTree = "<group>"; };
+		1E7584801CB8DEF4000947EA /* SHNAddTagToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNAddTagToolBar.xib; sourceTree = "<group>"; };
 		1E8E6C4E1C90491D00AC6D79 /* SHNShowPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNShowPictureViewController.h; sourceTree = "<group>"; };
 		1E8E6C4F1C90491D00AC6D79 /* SHNShowPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNShowPictureViewController.m; sourceTree = "<group>"; };
 		1E8E6C501C90491D00AC6D79 /* SHNShowPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNShowPictureViewController.xib; sourceTree = "<group>"; };
@@ -569,6 +574,9 @@
 			children = (
 				1EE2DAC91CABFE090012CA9D /* SHNPlaceHolderTextView.h */,
 				1EE2DACA1CABFE090012CA9D /* SHNPlaceHolderTextView.m */,
+				1E75847D1CB8DEDF000947EA /* SHNAddTagToolBar.h */,
+				1E75847E1CB8DEDF000947EA /* SHNAddTagToolBar.m */,
+				1E7584801CB8DEF4000947EA /* SHNAddTagToolBar.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -733,6 +741,7 @@
 				1EB28DE11C98359B0056B0E1 /* SHNTopicVoiceView.xib in Resources */,
 				1E2139891C8BC22A00D94018 /* SHNTopicCell.xib in Resources */,
 				1E21396F1C8A703000D94018 /* SHNPushGuideView.xib in Resources */,
+				1E7584811CB8DEF4000947EA /* SHNAddTagToolBar.xib in Resources */,
 				1E8E6C521C90491D00AC6D79 /* SHNShowPictureViewController.xib in Resources */,
 				1EB1B6561C91A0F800B9520B /* SHNPublishView.xib in Resources */,
 				1E5B825C1CA79CAA00F196DB /* SHNCommentViewController.xib in Resources */,
@@ -820,6 +829,7 @@
 				1EE2DAB81CABCBA40012CA9D /* SHNSqaureButton.m in Sources */,
 				1ED4C6AF1C7DFBCB009417C9 /* SHNEssenceViewController.m in Sources */,
 				1E2139881C8BC22A00D94018 /* SHNTopicCell.m in Sources */,
+				1E75847F1CB8DEDF000947EA /* SHNAddTagToolBar.m in Sources */,
 				1E4B72561C82FD1E0009C81F /* Foundation+Log.m in Sources */,
 				1EBE61D61C8EC21A00B9F547 /* SHNTopicViewController.m in Sources */,
 				1EAD82351C85C204008E5DCB /* SHNRecommendUserCell.m in Sources */,

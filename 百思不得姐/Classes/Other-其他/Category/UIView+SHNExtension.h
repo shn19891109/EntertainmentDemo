@@ -30,4 +30,6 @@
 //- (CGFloat)x;
 //- (void)setX:(CGFloat)x;
 
++ (instancetype)viewFromXib;
+
 @end

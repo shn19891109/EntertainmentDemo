@@ -9,7 +9,7 @@
 #import "SHNAddTagViewController.h"
 #import "SHNTagButton.h"
 
-@interface SHNAddTagViewController ()
+@interface SHNAddTagViewController ()<UITextFieldDelegate>
 /** 内容 */
 @property (nonatomic, weak) UIView *contentView;
 /** 文本输入框 */
@@ -22,6 +22,7 @@
 @end
 
 @implementation SHNAddTagViewController
+#pragma mark --懒加载--
 - (NSMutableArray *)tagButtons
 {
     if (!_tagButtons) {
@@ -47,7 +48,7 @@
     }
     return _addButton;
 }
-
+#pragma mark --初始化
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -74,6 +75,7 @@
     UITextField *textField = [[UITextField alloc] init];
     textField.width =  SHNScreenW;
     textField.height = 25;
+    textField.delegate = self;
     textField.placeholder = @"多个标签用逗号或者换行隔开";
     //设置了占位文字内容以后，才能设置占位文字的颜色
     [textField setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
@@ -96,24 +98,35 @@
 {
     
 }
-
+#pragma mark --监听文字改变--
 /**
  * 监听文字改变
  */
 - (void)textDidChange
 {
+    // 更新文本框的frame
+    [self updateTextFieldFrame];
+
     if (self.textField.hasText) { // 有文字
         // 显示"添加标签"的按钮
         self.addButton.hidden = NO;
         self.addButton.y = CGRectGetMaxY(self.textField.frame) + SHNTopicTagMargin;
         [self.addButton setTitle:[NSString stringWithFormat:@"添加标签: %@", self.textField.text] forState:UIControlStateNormal];
+        
+        //获得最后一个字符
+        NSString *text = self.textField.text;
+        NSUInteger len = text.length;
+        NSString *lastLetter = [text substringFromIndex:len -1];
+        if ([lastLetter isEqualToString:@","] || [lastLetter isEqualToString:@"，"]) {
+            //去除逗号
+            self.textField.text = [text substringToIndex:len - 1];
+            [self addButtonClick];
+        }
+        
     } else { // 没有文字
         // 隐藏"添加标签"的按钮
         self.addButton.hidden = YES;
     }
-    
-    //跟新标签和文本框的位置
-    [self updateTagButtonFrame];
 }
 /**
  * 监听"添加标签"按钮点击
@@ -129,11 +142,29 @@
     [self.tagButtons addObject:tagButton];
     //更新标签按钮的frame
     [self updateTagButtonFrame];
+    // 更新文本框的frame
+    [self updateTextFieldFrame];
+
     //清空textfield文字
     self.textField.text = nil;
     self.addButton.hidden = YES;
 
 }
+/**
+ *  标签按钮的点击
+ */
+- (void)tagButtonClick:(SHNTagButton *)tagButton {
+    [tagButton removeFromSuperview];
+    [self.tagButtons removeObject:tagButton];
+    //更新所有标签按钮的frame
+    [UIView animateWithDuration:0.25 animations:^{
+        [self updateTagButtonFrame];
+        // 更新文本框的frame
+        [self updateTextFieldFrame];
+
+    }];
+}
+
 /**
  * 专门用来更新标签按钮的frame
  */
@@ -161,6 +192,11 @@
             }
         }
     }
+}
+/**
+ * 更新textField的frame
+ */
+- (void)updateTextFieldFrame {
     //最后一个标签按钮
     SHNTagButton *lastButton = [self.tagButtons lastObject];
     //左边的宽度
@@ -176,22 +212,20 @@
     }
 }
 /**
- *  标签按钮的点击
- */
-- (void)tagButtonClick:(SHNTagButton *)tagButton {
-    [tagButton removeFromSuperview];
-    [self.tagButtons removeObject:tagButton];
-    //更新所有标签按钮的frame
-    [UIView animateWithDuration:0.25 animations:^{
-        [self updateTagButtonFrame];
-    }];
-}
-/**
  *  textfield的文字宽度
  */
 - (CGFloat)textFieldTextWidth {
     CGFloat textW = [self.textField.text sizeWithAttributes:@{NSFontAttributeName : self.textField.font}].width;
     return MAX(100, textW);
 }
-
+#pragma mark - <UITextFieldDelegate>
+/**
+ *  监听键盘最右下角按钮的点击(return key，比如换行，完成等)
+ */
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if (textField.hasText) {
+        [self addButtonClick];
+    }
+    return YES;
+}
 @end

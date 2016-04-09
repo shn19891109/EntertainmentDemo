@@ -40,6 +40,7 @@
 		1E5B82921CA96E0A00F196DB /* SHNWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E5B82911CA96E0A00F196DB /* SHNWindow.m */; };
 		1E75847F1CB8DEDF000947EA /* SHNAddTagToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E75847E1CB8DEDF000947EA /* SHNAddTagToolBar.m */; };
 		1E7584811CB8DEF4000947EA /* SHNAddTagToolBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E7584801CB8DEF4000947EA /* SHNAddTagToolBar.xib */; };
+		1E7584841CB8E185000947EA /* SHNAddTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7584831CB8E185000947EA /* SHNAddTagViewController.m */; };
 		1E8E6C511C90491D00AC6D79 /* SHNShowPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E6C4F1C90491D00AC6D79 /* SHNShowPictureViewController.m */; };
 		1E8E6C521C90491D00AC6D79 /* SHNShowPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E6C501C90491D00AC6D79 /* SHNShowPictureViewController.xib */; };
 		1E9AF5BA1C8F0E960035365C /* SHNTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AF5B91C8F0E960035365C /* SHNTopicPictureView.m */; };
@@ -152,6 +153,8 @@
 		1E75847D1CB8DEDF000947EA /* SHNAddTagToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNAddTagToolBar.h; sourceTree = "<group>"; };
 		1E75847E1CB8DEDF000947EA /* SHNAddTagToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNAddTagToolBar.m; sourceTree = "<group>"; };
 		1E7584801CB8DEF4000947EA /* SHNAddTagToolBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNAddTagToolBar.xib; sourceTree = "<group>"; };
+		1E7584821CB8E185000947EA /* SHNAddTagViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNAddTagViewController.h; sourceTree = "<group>"; };
+		1E7584831CB8E185000947EA /* SHNAddTagViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNAddTagViewController.m; sourceTree = "<group>"; };
 		1E8E6C4E1C90491D00AC6D79 /* SHNShowPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNShowPictureViewController.h; sourceTree = "<group>"; };
 		1E8E6C4F1C90491D00AC6D79 /* SHNShowPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNShowPictureViewController.m; sourceTree = "<group>"; };
 		1E8E6C501C90491D00AC6D79 /* SHNShowPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNShowPictureViewController.xib; sourceTree = "<group>"; };
@@ -565,6 +568,8 @@
 				1EE2DAC21CABF5E40012CA9D /* XMGPublishViewController.xib */,
 				1EE2DAC51CABF7290012CA9D /* SHNPostViewController.h */,
 				1EE2DAC61CABF7290012CA9D /* SHNPostViewController.m */,
+				1E7584821CB8E185000947EA /* SHNAddTagViewController.h */,
+				1E7584831CB8E185000947EA /* SHNAddTagViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -798,6 +803,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EE2DAC71CABF7290012CA9D /* SHNPostViewController.m in Sources */,
+				1E7584841CB8E185000947EA /* SHNAddTagViewController.m in Sources */,
 				1ED4C6B71C7DFBCB009417C9 /* main.m in Sources */,
 				1EB28DDF1C9835870056B0E1 /* SHNTopicVoiceView.m in Sources */,
 				1EE2DA9B1CABA68E0012CA9D /* UIImageView+SHNExtension.m in Sources */,

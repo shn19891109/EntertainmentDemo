@@ -8,12 +8,13 @@
 
 #import "SHNAddTagViewController.h"
 #import "SHNTagButton.h"
+#import "SHNTagTextField.h"
 
 @interface SHNAddTagViewController ()<UITextFieldDelegate>
 /** 内容 */
 @property (nonatomic, weak) UIView *contentView;
 /** 文本输入框 */
-@property (nonatomic, weak) UITextField *textField;
+@property (nonatomic, weak) SHNTagTextField *textField;
 /** 添加按钮 */
 @property (nonatomic, weak) UIButton *addButton;
 /** 所有的标签按钮 */
@@ -72,13 +73,20 @@
 
 - (void)setupTextFiled
 {
-    UITextField *textField = [[UITextField alloc] init];
-    textField.width =  SHNScreenW;
-    textField.height = 25;
+    __weak typeof(self) weakSelf = self;
+    SHNTagTextField *textField = [[SHNTagTextField alloc] init];
+    textField.width =  self.contentView.width;
+    textField.deleBlock = ^{
+        if (weakSelf.textField.hasText) {
+            return;
+        }
+        [weakSelf tagButtonClick:[weakSelf.tagButtons lastObject]];
+    };
+//    textField.height = 25;
     textField.delegate = self;
-    textField.placeholder = @"多个标签用逗号或者换行隔开";
-    //设置了占位文字内容以后，才能设置占位文字的颜色
-    [textField setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
+//    textField.placeholder = @"多个标签用逗号或者换行隔开";
+//    //设置了占位文字内容以后，才能设置占位文字的颜色
+//    [textField setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
 
     //UITextField监听文字变化一般用方法或者通知，不用代理
     [textField addTarget:self action:@selector(textDidChange) forControlEvents:UIControlEventEditingChanged];
@@ -228,4 +236,6 @@
     }
     return YES;
 }
+
+
 @end

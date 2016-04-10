@@ -37,3 +37,5 @@ NSString * const SHNTabBarDidSelectedNotification = @"SHNTabBarDidSelectedNotifi
 
 /** 标签-间距 */
 CGFloat const SHNTopicTagMargin = 5;
+/** 标签-高度 */
+CGFloat const SHNTagH = 25;

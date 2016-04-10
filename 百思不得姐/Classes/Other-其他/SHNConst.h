@@ -45,4 +45,5 @@ UIKIT_EXTERN NSString * const SHNTabBarDidSelectedNotification;
 
 /** 标签-间距 */
 UIKIT_EXTERN CGFloat const SHNTopicTagMargin;
-
+/** 标签-高度 */
+UIKIT_EXTERN CGFloat const SHNTagH;

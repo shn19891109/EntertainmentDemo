@@ -43,6 +43,7 @@
 		1E7584841CB8E185000947EA /* SHNAddTagViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7584831CB8E185000947EA /* SHNAddTagViewController.m */; };
 		1E7584871CB912A5000947EA /* SHNTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7584861CB912A5000947EA /* SHNTagButton.m */; };
 		1E75848A1CB9E51A000947EA /* SHNTagTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E7584891CB9E51A000947EA /* SHNTagTextField.m */; };
+		1E75848D1CBA1BA1000947EA /* SHNSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E75848C1CBA1BA1000947EA /* SHNSettingViewController.m */; };
 		1E8E6C511C90491D00AC6D79 /* SHNShowPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8E6C4F1C90491D00AC6D79 /* SHNShowPictureViewController.m */; };
 		1E8E6C521C90491D00AC6D79 /* SHNShowPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E8E6C501C90491D00AC6D79 /* SHNShowPictureViewController.xib */; };
 		1E9AF5BA1C8F0E960035365C /* SHNTopicPictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E9AF5B91C8F0E960035365C /* SHNTopicPictureView.m */; };
@@ -161,6 +162,8 @@
 		1E7584861CB912A5000947EA /* SHNTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNTagButton.m; sourceTree = "<group>"; };
 		1E7584881CB9E51A000947EA /* SHNTagTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNTagTextField.h; sourceTree = "<group>"; };
 		1E7584891CB9E51A000947EA /* SHNTagTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNTagTextField.m; sourceTree = "<group>"; };
+		1E75848B1CBA1BA1000947EA /* SHNSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNSettingViewController.h; sourceTree = "<group>"; };
+		1E75848C1CBA1BA1000947EA /* SHNSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNSettingViewController.m; sourceTree = "<group>"; };
 		1E8E6C4E1C90491D00AC6D79 /* SHNShowPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHNShowPictureViewController.h; sourceTree = "<group>"; };
 		1E8E6C4F1C90491D00AC6D79 /* SHNShowPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHNShowPictureViewController.m; sourceTree = "<group>"; };
 		1E8E6C501C90491D00AC6D79 /* SHNShowPictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SHNShowPictureViewController.xib; sourceTree = "<group>"; };
@@ -436,6 +439,8 @@
 				1EE2DAB91CABD2E70012CA9D /* SHNWebViewController.h */,
 				1EE2DABA1CABD2E70012CA9D /* SHNWebViewController.m */,
 				1EE2DABC1CABD4230012CA9D /* SHNWebViewController.xib */,
+				1E75848B1CBA1BA1000947EA /* SHNSettingViewController.h */,
+				1E75848C1CBA1BA1000947EA /* SHNSettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -852,6 +857,7 @@
 				1EBE61D61C8EC21A00B9F547 /* SHNTopicViewController.m in Sources */,
 				1EAD82351C85C204008E5DCB /* SHNRecommendUserCell.m in Sources */,
 				1E5B82551CA773B000F196DB /* SHNTopicVideoView.m in Sources */,
+				1E75848D1CBA1BA1000947EA /* SHNSettingViewController.m in Sources */,
 				1EBEBF7D1C8876B800778692 /* SHNVerticalButton.m in Sources */,
 				1E5B828D1CA9563500F196DB /* SHNCommentCell.m in Sources */,
 				1E21397E1C8AE61200D94018 /* SHNWordViewController.m in Sources */,

@@ -9,6 +9,7 @@
 #import "SHNMeViewController.h"
 #import "SHNMeViewCell.h"
 #import "SHNMeFooterView.h"
+#import "SHNSettingViewController.h"
 
 @interface SHNMeViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -56,10 +57,11 @@ static NSString *SHNMeId = @"me";
     self.tableView.tableFooterView = [[SHNMeFooterView alloc] init];
 
 }
-
+#pragma mark --设置按钮点击--
 - (void)settingClick
 {
-    SHNLogFunc;
+    SHNSettingViewController *settingVC = [[SHNSettingViewController alloc] init];
+    [self.navigationController pushViewController:settingVC animated:YES];
 }
 
 - (void)moonClick

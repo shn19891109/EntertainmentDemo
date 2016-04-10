@@ -10,6 +10,8 @@
 #import "SHNTagButton.h"
 #import "SHNTagTextField.h"
 
+#import <SVProgressHUD.h>
+
 @interface SHNAddTagViewController ()<UITextFieldDelegate>
 /** 内容 */
 @property (nonatomic, weak) UIView *contentView;
@@ -49,51 +51,96 @@
     }
     return _addButton;
 }
+- (UIView *)contentView {
+    if (!_contentView) {
+        UIView *contentView = [[UIView alloc] init];
+        [self.view addSubview:contentView];
+        self.contentView = contentView;
+    }
+    return _contentView;
+}
+- (SHNTagTextField *)textField {
+    if (!_textField) {
+        __weak typeof(self) weakSelf = self;
+        SHNTagTextField *textField = [[SHNTagTextField alloc] init];
+        textField.width =  self.contentView.width;
+        textField.deleBlock = ^{
+            if (weakSelf.textField.hasText) {
+                return;
+            }
+            [weakSelf tagButtonClick:[weakSelf.tagButtons lastObject]];
+        };
+        //    textField.height = 25;
+        textField.delegate = self;
+        //    textField.placeholder = @"多个标签用逗号或者换行隔开";
+        //    //设置了占位文字内容以后，才能设置占位文字的颜色
+        //    [textField setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
+        
+        //UITextField监听文字变化一般用方法或者通知，不用代理
+        [textField addTarget:self action:@selector(textDidChange) forControlEvents:UIControlEventEditingChanged];
+        [textField becomeFirstResponder];
+        [self.contentView addSubview:textField];
+        self.textField = textField;
+    }
+    return _textField;
+}
 #pragma mark --初始化
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     [self setupNav];
     
-    [self setupContentView];
-    
-    [self setupTextFiled];
+//    [self setupContentView];
+//    
+//    [self setupTextFiled];
+//    
+//    [self setupTags];
 
 }
-- (void)setupContentView
+#pragma mark --初始化标签---
+- (void)setupTags
 {
-    UIView *contentView = [[UIView alloc] init];
-    contentView.x = SHNTopicTagMargin;
-    contentView.width = self.view.width - 2 * contentView.x;
-    contentView.y = 64 +  SHNTopicTagMargin;
-    contentView.height =  SHNScreenH;
-    [self.view addSubview:contentView];
-    self.contentView = contentView;
+    for (NSString *tag in self.tags) {
+        self.textField.text = tag;
+        [self addButtonClick];
+    }
+    self.tags = nil;
 }
 
-- (void)setupTextFiled
-{
-    __weak typeof(self) weakSelf = self;
-    SHNTagTextField *textField = [[SHNTagTextField alloc] init];
-    textField.width =  self.contentView.width;
-    textField.deleBlock = ^{
-        if (weakSelf.textField.hasText) {
-            return;
-        }
-        [weakSelf tagButtonClick:[weakSelf.tagButtons lastObject]];
-    };
-//    textField.height = 25;
-    textField.delegate = self;
-//    textField.placeholder = @"多个标签用逗号或者换行隔开";
-//    //设置了占位文字内容以后，才能设置占位文字的颜色
-//    [textField setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
-
-    //UITextField监听文字变化一般用方法或者通知，不用代理
-    [textField addTarget:self action:@selector(textDidChange) forControlEvents:UIControlEventEditingChanged];
-    [textField becomeFirstResponder];
-    [self.contentView addSubview:textField];
-    self.textField = textField;
-}
+//- (void)setupContentView
+//{
+//    UIView *contentView = [[UIView alloc] init];
+//    contentView.x = SHNTopicTagMargin;
+//    contentView.width = self.view.width - 2 * contentView.x;
+//    contentView.y = 64 +  SHNTopicTagMargin;
+//    contentView.height =  SHNScreenH;
+//    [self.view addSubview:contentView];
+//    self.contentView = contentView;
+//}
+//
+//- (void)setupTextFiled
+//{
+//    __weak typeof(self) weakSelf = self;
+//    SHNTagTextField *textField = [[SHNTagTextField alloc] init];
+//    textField.width =  self.contentView.width;
+//    textField.deleBlock = ^{
+//        if (weakSelf.textField.hasText) {
+//            return;
+//        }
+//        [weakSelf tagButtonClick:[weakSelf.tagButtons lastObject]];
+//    };
+////    textField.height = 25;
+//    textField.delegate = self;
+////    textField.placeholder = @"多个标签用逗号或者换行隔开";
+////    //设置了占位文字内容以后，才能设置占位文字的颜色
+////    [textField setValue:[UIColor grayColor] forKeyPath:@"_placeholderLabel.textColor"];
+//
+//    //UITextField监听文字变化一般用方法或者通知，不用代理
+//    [textField addTarget:self action:@selector(textDidChange) forControlEvents:UIControlEventEditingChanged];
+//    [textField becomeFirstResponder];
+//    [self.contentView addSubview:textField];
+//    self.textField = textField;
+//}
 
 - (void)setupNav
 {
@@ -102,10 +149,40 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"完成" style:UIBarButtonItemStyleDone target:self action:@selector(done)];
 }
 
+#pragma mark --完成按钮点击--
 - (void)done
 {
+    //传递数据给上一个控制器
+//    NSMutableArray *tags = [NSMutableArray array];
+//    for (SHNTagButton *tagButton in self.tagButtons) {
+//        [tags addObject:tagButton.currentTitle];
+//    }
+    NSArray *tags = [self.tagButtons valueForKeyPath:@"currentTitle"];
+    !self.tagsBlock ? : self.tagsBlock(tags);
+    [self.navigationController popViewControllerAnimated:YES];
     
 }
+
+/**
+ * 布局控制器view的子控件
+ */
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    
+    self.contentView.x = SHNTopicTagMargin;
+    self.contentView.width = self.view.width - 2 * self.contentView.x;
+    self.contentView.y = 64 + SHNTopicTagMargin;
+    self.contentView.height = SHNScreenH;
+    
+    self.textField.width = self.contentView.width;
+    
+    self.addButton.width = self.contentView.width;
+    
+    [self setupTags];
+}
+
+
 #pragma mark --监听文字改变--
 /**
  * 监听文字改变
@@ -141,11 +218,14 @@
  */
 - (void)addButtonClick
 {
+    if (self.tagButtons.count == 5) {
+        [SVProgressHUD showErrorWithStatus:@"最多添加5个标签" maskType:SVProgressHUDMaskTypeBlack];
+        return;
+    }
     // 添加一个"标签按钮"
     SHNTagButton *tagButton = [SHNTagButton buttonWithType:UIButtonTypeCustom];
     [tagButton addTarget:self action:@selector(tagButtonClick:) forControlEvents:UIControlEventTouchUpInside];
     [tagButton setTitle:self.textField.text forState:UIControlStateNormal];
-    tagButton.height = self.textField.height;
     [self.contentView addSubview:tagButton];
     [self.tagButtons addObject:tagButton];
     //更新标签按钮的frame
@@ -156,7 +236,6 @@
     //清空textfield文字
     self.textField.text = nil;
     self.addButton.hidden = YES;
-
 }
 /**
  *  标签按钮的点击
@@ -169,7 +248,6 @@
         [self updateTagButtonFrame];
         // 更新文本框的frame
         [self updateTextFieldFrame];
-
     }];
 }
 

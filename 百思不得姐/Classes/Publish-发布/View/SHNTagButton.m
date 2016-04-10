@@ -27,6 +27,8 @@
     [self sizeToFit];
     
     self.width += 3 * SHNTopicTagMargin;
+    self.height = SHNTagH;
+
 }
 
 - (void)layoutSubviews
